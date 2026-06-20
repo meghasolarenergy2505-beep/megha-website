@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Megha Associates — Solar &amp; Real Estate, Durg | ज़मीन से आसमान तक</title>
+<meta name="description" content="Megha Associates, Durg (C.G.) — rooftop solar, solar power plants & borewell solar pumps with Satvik, Waaree & Adani panels. Govt subsidy up to ₹1,08,000. Plus agriculture, commercial & residential land." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A2540;--ink-2:#123a63;--sun:#F6B400;--sun-deep:#E08A00;
+  --land:#1C7C43;--land-deep:#14602f;--paper:#FBFAF6;--paper-2:#F2EEE4;
+  --line:#E4DECF;--slate:#3A4757;--muted:#6B7785;--white:#fff;--wa:#25D366;
+  --shadow:0 18px 50px -22px rgba(10,37,64,.45);--maxw:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Manrope",system-ui,sans-serif;color:var(--slate);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+.dev{font-family:"Noto Sans Devanagari","Manrope",sans-serif}
+h1,h2,h3,h4,h5{font-family:"Sora",sans-serif;color:var(--ink);line-height:1.14;margin:0;letter-spacing:-.02em;font-weight:700}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.sec{padding:80px 0}
+.eyebrow{font-family:"Sora";font-weight:600;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sun-deep)}
+.eyebrow.green{color:var(--land)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:"Sora";font-weight:600;font-size:.95rem;padding:.85rem 1.4rem;border-radius:999px;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-sun{background:var(--sun);color:var(--ink);box-shadow:0 10px 24px -10px rgba(224,138,0,.7)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-line{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+.btn-green{background:var(--land);color:#fff;box-shadow:0 10px 24px -10px rgba(20,96,47,.7)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -10px rgba(37,211,102,.6)}
+.head{max-width:48rem;margin:0 auto 48px;text-align:center}
+.head.left{margin-left:0;text-align:left}
+.head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-top:14px}
+.head p{margin-top:14px;color:var(--muted);font-size:1.05rem}
+
+/* ============ TOP UTILITY BAR ============ */
+.topbar{background:var(--ink);color:#cdd9e6;font-size:.84rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:18px}
+.topbar .left{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.topbar a{display:inline-flex;align-items:center;gap:7px;color:#cdd9e6}
+.topbar a:hover{color:#fff}
+.topbar .wa-link{color:#7fe6a3}
+.topbar .socials{display:flex;gap:12px}
+.topbar .socials a{width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.topbar .socials a:hover{background:var(--sun);color:var(--ink)}
+.topbar .sep{opacity:.3}
+
+/* ============ HEADER / NAV ============ */
+header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:.7rem}
+.logo{width:46px;height:46px;flex:none}
+.brand b{font-family:"Sora";font-weight:800;color:var(--ink);font-size:1.2rem;letter-spacing:-.03em;line-height:1}
+.brand small{display:block;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:2px}
+.navlinks{display:flex;align-items:center;gap:.4rem}
+.navlinks>a,.navlinks .dd>span{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:.93rem;color:var(--ink);opacity:.85;padding:10px 14px;border-radius:10px;cursor:pointer}
+.navlinks>a:hover,.navlinks .dd:hover>span{opacity:1;background:var(--paper-2)}
+.dd{position:relative}
+.dd .menu{position:absolute;top:100%;left:0;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:8px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.18s;z-index:70}
+.dd:hover .menu{opacity:1;visibility:visible;transform:translateY(4px)}
+.dd .menu a{display:block;padding:10px 12px;border-radius:9px;font-size:.9rem;font-weight:600;color:var(--ink)}
+.dd .menu a:hover{background:var(--paper-2);color:var(--sun-deep)}
+.dd .menu small{display:block;font-weight:500;color:var(--muted);font-size:.78rem;margin-top:1px}
+.navcta{margin-left:8px}
+.menubtn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.menubtn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 80% -10%, #1b4a7d 0%, var(--ink) 46%, #071a30 100%);color:#fff}
+.hero .wrap{position:relative;z-index:3;padding-top:74px;padding-bottom:84px}
+.sun-arc{position:absolute;right:-6%;top:-24%;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(246,180,0,.95) 0%,rgba(246,180,0,.5) 38%,rgba(246,180,0,0) 70%);filter:blur(2px);z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.7rem);font-weight:800}
+.hero h1 .gold{color:var(--sun)}
+.hero .lede{margin-top:18px;font-size:1.1rem;color:#cfe0f0;max-width:32rem}
+.hero .cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero .mini{margin-top:22px;font-size:.88rem;color:#9fb8d0;display:flex;align-items:center;gap:8px}
+.subcard{background:#fff;color:var(--ink);border-radius:22px;padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.subcard:before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(246,180,0,.12),transparent 60%)}
+.subcard .tag{position:relative;display:inline-flex;align-items:center;gap:6px;background:var(--land);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.05em;padding:5px 12px;border-radius:999px}
+.subcard h3{position:relative;font-size:1.05rem;margin-top:14px;color:var(--ink-2);font-weight:600}
+.subcard .big{position:relative;font-family:"Sora";font-weight:800;font-size:3rem;color:var(--ink);margin:4px 0 2px}
+.subcard .big small{font-size:1rem;color:var(--muted);font-weight:600}
+.subcard ul{position:relative;list-style:none;padding:0;margin:16px 0 0;display:grid;gap:9px}
+.subcard li{display:flex;align-items:center;gap:9px;font-size:.92rem;color:var(--slate);font-weight:500}
+
+/* ============ TRUST BADGES (3) ============ */
+.badges{background:#fff;border-bottom:1px solid var(--line)}
+.badges .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.badge{display:flex;align-items:center;gap:16px;padding:30px 26px;border-right:1px solid var(--line)}
+.badge:last-child{border-right:0}
+.badge .bic{width:52px;height:52px;border-radius:14px;background:rgba(246,180,0,.14);display:grid;place-items:center;flex:none}
+.badge h4{font-size:1.05rem}
+.badge p{font-size:.86rem;color:var(--muted)}
+
+/* ============ WHY US (two-column) ============ */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.why-list{list-style:none;padding:0;margin:22px 0 26px;display:grid;gap:14px}
+.why-list li{display:flex;gap:12px;align-items:flex-start}
+.why-list .tick{width:26px;height:26px;border-radius:8px;background:rgba(28,124,67,.12);display:grid;place-items:center;flex:none;margin-top:2px}
+.why-list b{color:var(--ink);font-family:"Sora";font-size:.98rem}
+.why-list span{color:var(--muted);font-size:.92rem}
+.why-visual{position:relative;border-radius:24px;overflow:hidden;min-height:380px;background:linear-gradient(150deg,#14406e,#0a2540);display:grid;place-items:center}
+.why-visual .vsun{position:absolute;top:-40px;right:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(246,180,0,.9),rgba(246,180,0,0) 70%)}
+.why-visual .vhouse{position:relative;z-index:2}
+.exp-badge{position:absolute;left:24px;bottom:24px;background:var(--sun);color:var(--ink);border-radius:16px;padding:16px 22px;box-shadow:0 12px 30px -10px rgba(0,0,0,.4);z-index:3}
+.exp-badge b{font-family:"Sora";font-size:1.8rem;display:block;line-height:1}
+.exp-badge span{font-size:.8rem;font-weight:600}
+
+/* ============ SERVICE CARDS GRID ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.scard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .18s,box-shadow .2s;display:flex;flex-direction:column}
+.scard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.scard .stop{height:96px;display:grid;place-items:center;position:relative}
+.scard .stop.solar{background:linear-gradient(140deg,#14406e,#0a2540)}
+.scard .stop.gold{background:linear-gradient(140deg,#f6b400,#c97e00)}
+.scard .stop.plant{background:linear-gradient(140deg,#1b4a7d,#0a2540)}
+.scard .stop.agri{background:linear-gradient(140deg,#2aa35a,#14602f)}
+.scard .stop.comm{background:linear-gradient(140deg,#2b6cb0,#0a2540)}
+.scard .stop.resi{background:linear-gradient(140deg,#E08A00,#9c5b00)}
+.scard .sbody{padding:24px;flex:1;display:flex;flex-direction:column}
+.scard .pill{position:absolute;top:14px;left:16px;font-family:"Sora";font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.18);padding:4px 10px;border-radius:999px}
+.scard h4{font-size:1.2rem;margin-bottom:8px}
+.scard p{color:var(--muted);font-size:.93rem;flex:1}
+.scard .more{margin-top:16px;font-family:"Sora";font-weight:600;font-size:.9rem;color:var(--sun-deep);display:inline-flex;align-items:center;gap:6px}
+.scard.green .more{color:var(--land)}
+
+/* ============ BRANDS STRIP ============ */
+.brands{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.brands .wrap{padding:42px 22px}
+.brand-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:22px}
+.brand-chip{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 26px;font-family:"Sora";font-weight:700;color:var(--ink);font-size:1.05rem;letter-spacing:.02em}
+.brand-chip small{display:block;font-family:"Manrope";font-weight:500;font-size:.7rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+
+/* ============ STATS ============ */
+.stats{background:var(--ink);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:56px 22px}
+.stat{text-align:center}
+.stat b{font-family:"Sora";font-weight:800;font-size:2.6rem;color:var(--sun);display:block;line-height:1}
+.stat span{color:#aebfd2;font-size:.92rem;margin-top:8px;display:block}
+
+/* ============ ESTIMATOR ============ */
+.estimate{background:#fff;border:1px solid var(--line);border-radius:26px;padding:42px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;box-shadow:var(--shadow)}
+.estimate h3{font-size:1.5rem}
+.estimate label{font-size:.82rem;color:var(--muted);font-weight:600;display:block;margin-bottom:8px;letter-spacing:.03em}
+.estimate .ipt{display:flex;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:4px 16px}
+.estimate .ipt span{color:var(--sun-deep);font-family:"Sora";font-weight:700;font-size:1.1rem}
+.estimate input[type=number]{flex:1;background:none;border:0;color:var(--ink);font-size:1.4rem;font-family:"Sora";font-weight:700;padding:14px 8px;width:100%}
+.estimate input:focus{outline:none}
+.est-out{background:var(--ink);border-radius:18px;padding:26px;color:#fff}
+.est-out .row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.14)}
+.est-out .row:last-child{border:0}
+.est-out .row b{font-family:"Sora";font-size:1.45rem;color:var(--sun)}
+.est-out .row span{color:#cdd9e6;font-size:.92rem}
+.disc{font-size:.76rem;color:var(--muted);margin-top:14px}
+
+/* ============ WHY STRIP ============ */
+.strip{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;padding:40px 22px}
+.strip div{display:flex;align-items:center;gap:12px;font-weight:600;color:var(--ink);font-size:.95rem}
+.strip .ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none}
+
+/* ============ TESTIMONIALS ============ */
+.tcar{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px;-webkit-overflow-scrolling:touch}
+.tcar::-webkit-scrollbar{height:8px}
+.tcar::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.tcard{scroll-snap-align:start;flex:0 0 360px;max-width:360px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.tcard .stars{color:var(--sun);letter-spacing:2px;margin-bottom:12px}
+.tcard p{color:var(--slate);font-size:.96rem;font-style:italic}
+.tcard .who{display:flex;align-items:center;gap:12px;margin-top:18px}
+.tcard .av{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:"Sora";font-weight:700;flex:none}
+.tcard .who b{font-family:"Sora";color:var(--ink);font-size:.95rem;display:block}
+.tcard .who span{color:var(--muted);font-size:.84rem}
+
+/* ============ BLOG ============ */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bcard{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .18s,box-shadow .2s}
+.bcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.bcard .bimg{height:150px;display:grid;place-items:center;color:#fff}
+.bcard .bimg.a{background:linear-gradient(140deg,#f6b400,#c97e00)}
+.bcard .bimg.b{background:linear-gradient(140deg,#14406e,#0a2540)}
+.bcard .bimg.c{background:linear-gradient(140deg,#2aa35a,#14602f)}
+.bcard .bbody{padding:22px}
+.bcard .btag{font-family:"Sora";font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sun-deep)}
+.bcard h4{font-size:1.1rem;margin:8px 0 8px}
+.bcard p{color:var(--muted);font-size:.9rem}
+.bcard .more{margin-top:14px;font-family:"Sora";font-weight:600;font-size:.88rem;color:var(--ink);display:inline-flex;gap:6px}
+
+/* ============ CTA BAND ============ */
+.ctaband{background:linear-gradient(150deg,#14406e,#0a2540);color:#fff;border-radius:26px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.ctaband:before{content:"";position:absolute;right:-30px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(246,180,0,.35),transparent 70%)}
+.ctaband h3{color:#fff;font-size:1.8rem;position:relative}
+.ctaband p{color:#cfe0f0;margin-top:8px;position:relative}
+.ctaband .acts{display:flex;gap:14px;position:relative;flex-wrap:wrap}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cinfo .row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.cinfo .ic{width:46px;height:46px;border-radius:13px;background:var(--ink);display:grid;place-items:center;flex:none}
+.cinfo .row b{display:block;font-family:"Sora";color:var(--ink);font-size:1.02rem}
+.cinfo .row span{color:var(--muted);font-size:.93rem}
+.cform{background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow)}
+.cform h3{font-size:1.35rem;margin-bottom:6px}
+.cform p{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+.field{margin-bottom:14px}
+.field label{font-size:.82rem;font-weight:600;color:var(--ink);display:block;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:.95rem;background:var(--paper)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sun);box-shadow:0 0 0 3px rgba(246,180,0,.18)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:#cdd9e6;padding:60px 0 26px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:34px;margin-bottom:36px}
+footer h4{color:#fff;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+footer a.fl{display:block;color:#9fb3c8;padding:5px 0;font-size:.92rem}
+footer a.fl:hover{color:var(--sun)}
+.fbrand b{font-family:"Sora";font-weight:800;color:#fff;font-size:1.3rem}
+.fbrand p{color:#9fb3c8;font-size:.9rem;margin-top:12px;max-width:24rem}
+.fsoc{display:flex;gap:10px;margin-top:16px}
+.fsoc a{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.fsoc a:hover{background:var(--sun);color:var(--ink)}
+.areas{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;margin-bottom:18px}
+.areas h4{margin-bottom:10px}
+.areas span{color:#9fb3c8;font-size:.88rem}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.84rem;color:#7f93a8}
+.ownerlink{cursor:pointer;color:#7f93a8}
+.ownerlink:hover{color:var(--sun)}
+
+/* ============ FLOATING WHATSAPP WIDGET ============ */
+.fab{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.wa-widget{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 7px 7px 16px;box-shadow:0 12px 30px -10px rgba(0,0,0,.35);text-decoration:none}
+.wa-widget span{font-family:"Sora";font-weight:600;font-size:.9rem;color:var(--ink)}
+.wa-widget .ico{width:44px;height:44px;border-radius:50%;background:var(--wa);display:grid;place-items:center;flex:none}
+.fab .call{width:52px;height:52px;border-radius:50%;background:var(--ink);display:grid;place-items:center;align-self:flex-end;box-shadow:0 12px 28px -8px rgba(0,0,0,.4)}
+
+/* ============ OWNER MODAL / QUOTATION (kept) ============ */
+.overlay{position:fixed;inset:0;background:rgba(7,20,38,.6);backdrop-filter:blur(4px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:30px 16px;overflow:auto}
+.overlay.show{display:flex}
+.modal{background:var(--paper);border-radius:22px;width:100%;max-width:920px;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);overflow:hidden}
+.modal-head{background:var(--ink);color:#fff;padding:20px 26px;display:flex;justify-content:space-between;align-items:center}
+.modal-head h3{color:#fff;font-size:1.15rem}
+.modal-head .x{background:rgba(255,255,255,.12);border:0;color:#fff;width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:1.1rem}
+.modal-body{padding:26px}
+.gate{max-width:360px;margin:20px auto;text-align:center}
+.gate .lock{width:60px;height:60px;border-radius:16px;background:rgba(246,180,0,.16);display:grid;place-items:center;margin:0 auto 16px}
+.gate h4{font-size:1.3rem;margin-bottom:6px}
+.gate p{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+.gate input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;font-size:1rem;text-align:center;letter-spacing:.1em}
+.gate .err{color:#c0392b;font-size:.85rem;margin-top:10px;min-height:18px}
+.tabs{display:flex;gap:8px;margin-bottom:22px;background:var(--paper-2);padding:5px;border-radius:12px}
+.tabs button{flex:1;border:0;background:none;padding:10px;border-radius:9px;font-family:"Sora";font-weight:600;cursor:pointer;color:var(--muted);font-size:.92rem}
+.tabs button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px -2px rgba(0,0,0,.15)}
+.builder label{font-size:.78rem;font-weight:600;color:var(--ink);display:block;margin-bottom:5px}
+.builder input,.builder select,.builder textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:.9rem;background:#fff}
+.builder input:focus,.builder textarea:focus,.builder select:focus{outline:none;border-color:var(--sun)}
+.frow3{display:grid;grid-template-columns:2fr 1.4fr .9fr auto;gap:10px;align-items:end;margin-bottom:10px}
+.items-head{display:flex;justify-content:space-between;align-items:center;margin:22px 0 10px}
+.items-head h4{font-size:1rem}
+.delrow{background:#fff;border:1px solid var(--line);border-radius:9px;cursor:pointer;color:#c0392b;width:38px;height:38px;font-size:1rem}
+.addrow{background:rgba(28,124,67,.1);color:var(--land);border:1px dashed var(--land);border-radius:10px;padding:9px 14px;cursor:pointer;font-weight:600;font-family:"Sora";font-size:.85rem}
+.totbar{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.btnbar{display:flex;gap:12px;justify-content:flex-end;margin-top:24px;flex-wrap:wrap}
+.sheet-wrap{display:none}
+#sheet{background:#fff;color:#111;font-family:"Manrope",sans-serif;width:794px;margin:0 auto;padding:42px 46px;font-size:13px;line-height:1.5}
+#sheet .q-top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--ink);padding-bottom:16px}
+#sheet .q-co{font-family:"Sora";font-weight:800;font-size:1.7rem;color:var(--ink);line-height:1}
+#sheet .q-co small{display:block;font-family:"Sora";font-weight:600;font-size:.7rem;letter-spacing:.18em;color:var(--sun-deep);margin-top:4px}
+#sheet .q-addr{font-size:11.5px;color:#444;margin-top:8px;max-width:340px}
+#sheet .q-logo{width:64px;height:64px}
+#sheet .q-meta{display:flex;justify-content:space-between;margin:18px 0;font-size:12px}
+#sheet .q-title{text-align:center;font-family:"Sora";font-weight:800;font-size:1.2rem;color:var(--ink);letter-spacing:.04em;background:var(--paper-2);padding:9px;border-radius:8px;margin:6px 0 16px}
+#sheet table{width:100%;border-collapse:collapse;font-size:12px}
+#sheet th{background:var(--ink);color:#fff;text-align:left;padding:9px 10px;font-family:"Sora";font-weight:600;font-size:11px}
+#sheet td{padding:8px 10px;border:1px solid #e2e2e2;vertical-align:top}
+#sheet tr:nth-child(even) td{background:#faf9f5}
+#sheet .q-amt{margin-top:14px;display:flex;justify-content:flex-end}
+#sheet .q-amt table{width:auto;min-width:300px}
+#sheet .q-amt td{border:0;padding:5px 12px}
+#sheet .q-amt .grand td{font-family:"Sora";font-weight:800;font-size:1.05rem;color:var(--ink);border-top:2px solid var(--ink)}
+#sheet .q-words{font-style:italic;color:#333;margin-top:6px;font-size:11.5px}
+#sheet .q-section{margin-top:18px}
+#sheet .q-section h5{font-family:"Sora";font-size:12px;color:var(--ink);margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+#sheet .q-tc{font-size:11.5px;color:#333}
+#sheet .q-tc div{padding:2px 0}
+#sheet .q-grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:16px}
+#sheet .q-bank{font-size:11.5px;background:#faf9f5;border:1px solid #eee;border-radius:8px;padding:12px}
+#sheet .q-sub{background:rgba(246,180,0,.16);border:1px solid var(--sun);border-radius:8px;padding:10px 12px;font-weight:700;color:var(--ink);font-size:12px;margin-top:10px}
+#sheet .q-foot{margin-top:26px;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #ddd;padding-top:14px}
+#sheet .q-sign{text-align:center;font-size:11.5px;color:#444}
+#sheet .q-sign b{font-family:"Sora";color:var(--ink)}
+#sheet .q-thanks{font-family:"Sora";color:var(--land);font-weight:700}
+.hidden{display:none!important}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:980px){
+  .navlinks{position:fixed;inset:74px 0 auto 0;background:var(--paper);flex-direction:column;align-items:stretch;gap:0;padding:10px 22px 22px;border-bottom:1px solid var(--line);display:none;max-height:80vh;overflow:auto}
+  .navlinks.open{display:flex}
+  .navlinks>a,.navlinks .dd>span{padding:14px 6px;border-bottom:1px solid var(--line);border-radius:0}
+  .dd .menu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 10px 14px;min-width:0}
+  .navcta{margin:14px 0 0}
+  .menubtn{display:block}
+  .hero-grid,.why-grid,.estimate,.contact-grid{grid-template-columns:1fr}
+  .svc-grid,.blog-grid,.badges .wrap{grid-template-columns:1fr}
+  .badge{border-right:0;border-bottom:1px solid var(--line)}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .sun-arc{width:340px;right:-20%;top:-10%}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .sec{padding:60px 0}
+}
+@media(max-width:560px){
+  .frow,.frow3,.totbar{grid-template-columns:1fr}
+  .topbar .left{gap:12px}
+  .fgrid{grid-template-columns:1fr}
+  .wa-widget span{display:none}
+}
+@media print{
+  html,body{background:#fff!important;height:auto!important}
+  body>*:not(#sheetWrap){display:none!important}
+  #sheetWrap{display:block!important;position:static!important;margin:0!important;inset:auto!important}
+  #sheet{width:100%!important;margin:0!important;padding:14px 18px!important;font-size:11px!important;box-shadow:none!important}
+  #sheet .q-amt{margin-top:10px}
+  #sheet .q-section{margin-top:11px}
+  #sheet .q-grid2{margin-top:11px;gap:16px}
+  #sheet .q-foot{margin-top:14px}
+  #sheet .q-words{margin-top:5px}
+  #sheet table{page-break-inside:auto}
+  #sheet tr{page-break-inside:avoid}
+  @page{margin:8mm;size:A4 portrait}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body id="top">
+
+<!-- WhatsApp official icon as reusable symbol -->
+<svg width="0" height="0" style="position:absolute"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.034zm5.443-7.428c-.183-.092-1.083-.534-1.251-.595-.168-.061-.29-.092-.412.092-.122.183-.473.595-.58.717-.107.122-.214.137-.397.046-.183-.092-.773-.285-1.472-.908-.544-.485-.911-1.084-1.018-1.267-.107-.183-.011-.282.08-.373.082-.082.183-.214.275-.32.091-.107.122-.184.183-.306.061-.122.03-.229-.015-.32-.046-.092-.412-.993-.564-1.36-.149-.357-.3-.308-.412-.314l-.351-.006a.673.673 0 00-.488.229c-.168.183-.641.627-.641 1.528 0 .901.657 1.772.748 1.894.092.122 1.292 1.973 3.13 2.766.438.189.78.302 1.046.387.44.14.84.12 1.156.073.353-.053 1.083-.443 1.235-.87.152-.428.152-.794.107-.87-.046-.077-.168-.123-.351-.214z"/></symbol></svg>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="left">
+      <a href="mailto:meghasolarenergy2505@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="2"/></svg> meghasolarenergy2505@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="tel:7828826316"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2c1 2 3 4 5 5l2-3 5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> +91 78288 26316</a>
+      <a class="wa-link" href="https://wa.me/917828826316" target="_blank" rel="noopener"><svg width="15" height="15"><use href="#wa"/></svg> WhatsApp</a>
+    </div>
+    <div class="socials">
+      <a href="#" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1.5C18.7 1.4 17.5 1 16 1c-3 0-5 1.8-5 5.2V9H7v4h4v9h2z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+      <a href="https://wa.me/917828826316" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="13" height="13"><use href="#wa"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Megha Associates home">
+      <svg class="logo" viewBox="0 0 128 128" aria-hidden="true">
+        <circle cx="64" cy="40" r="19" fill="#F6B400"/>
+        <g stroke="#F6B400" stroke-width="4.4" stroke-linecap="round"><line x1="64" y1="8" x2="64" y2="17"/><line x1="40" y1="16" x2="45" y2="24"/><line x1="88" y1="16" x2="83" y2="24"/><line x1="26" y1="40" x2="35" y2="40"/><line x1="102" y1="40" x2="93" y2="40"/></g>
+        <path d="M20 82 L64 47 L108 82 Z" fill="#0A2540"/>
+        <path d="M37 80 L64 58 L91 80 L64 80 Z" fill="#1C7C43"/>
+        <g stroke="#fff" stroke-width="2" opacity=".9"><line x1="50.5" y1="69" x2="50.5" y2="80"/><line x1="64" y1="58" x2="64" y2="80"/><line x1="77.5" y1="69" x2="77.5" y2="80"/><line x1="46" y1="73" x2="82" y2="73"/></g>
+        <rect x="22" y="92" width="84" height="8" rx="4" fill="#1C7C43"/><rect x="22" y="106" width="56" height="8" rx="4" fill="#0A2540" opacity=".85"/>
+      </svg>
+      <span><b>Megha Associates</b><small>Solar &middot; Real Estate</small></span>
+    </a>
+    <nav class="navlinks" id="navlinks">
+      <div class="dd">
+        <span>Solar ▾</span>
+        <div class="menu">
+          <a href="#services">Rooftop Solar<small class="dev">घर, दुकान, office</small></a>
+          <a href="#services">Solar Power Plant<small>Install + full service</small></a>
+          <a href="#services">Solar Water Pump<small class="dev">Borewell / सिंचाई</small></a>
+        </div>
+      </div>
+      <div class="dd">
+        <span>Real Estate ▾</span>
+        <div class="menu">
+          <a href="#services">Agriculture Land<small class="dev">खेती के लिए</small></a>
+          <a href="#services">Commercial Land<small class="dev">दुकान / showroom</small></a>
+          <a href="#services">Residential Land<small class="dev">घर बनाने के लिए</small></a>
+        </div>
+      </div>
+      <a href="#why">Why Us</a>
+      <a href="#estimate">Calculator</a>
+      <a href="#blog">Tips</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-sun navcta" href="#contact">Free Site Visit</a>
+    </nav>
+    <button class="menubtn" id="menubtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="sun-arc" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Durg · Raipur, Chhattisgarh</span>
+        <h1 class="dev" style="margin-top:14px">ज़मीन से <span class="gold">आसमान</span> तक — <span style="font-family:Sora">solar &amp; land, one trusted name</span></h1>
+        <p class="lede dev">छत पर solar लगवाइए और सरकारी सब्सिडी पाइए, खेत के लिए solar pump, या खरीदिए agriculture / commercial / residential ज़मीन — सब एक ही जगह, <b style="color:#fff">Megha Associates</b>.</p>
+        <div class="cta-row">
+          <a class="btn btn-sun" href="#contact">Get Free Quote</a>
+          <a class="btn btn-wa" href="https://wa.me/917828826316" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wa"/></svg> WhatsApp Us</a>
+        </div>
+        <div class="mini"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#7fe6a3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Satvik · Waaree · Adani panels &nbsp;•&nbsp; Free site visit</div>
+      </div>
+      <div class="subcard">
+        <span class="tag">★ सबसे बड़ी बात</span>
+        <h3 class="dev">Government Subsidy का फायदा</h3>
+        <div class="big">₹1,08,000 <small>तक*</small></div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Satvik / Waaree / Adani panels</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Fast installation &amp; expert team</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 25-year panel warranty</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Long-term savings का भरोसा</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BADGES ============ -->
+<div class="badges">
+  <div class="wrap">
+    <div class="badge">
+      <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z" stroke="#E08A00" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#E08A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h4>Trusted Service</h4><p class="dev">सर्वे से synchronization तक — पूरा काम company खुद करती है.</p></div>
+    </div>
+    <div class="badge">
+      <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="#E08A00" stroke-width="2"/><path d="M3 9h18M9 4v12M15 4v12" stroke="#E08A00" stroke-width="1.5"/></svg></div>
+      <div><h4>Quality Panels</h4><p class="dev">सिर्फ़ tier-1 brands: Satvik, Waaree और Adani.</p></div>
+    </div>
+    <div class="badge">
+      <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E08A00" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 015 0c0 2-2.5 2-2.5 4M12 17h.01" stroke="#E08A00" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div><h4>Subsidy Help</h4><p class="dev">PM Surya Ghar subsidy का पूरा process हम संभालते हैं.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WHY US ============ -->
+<section class="sec" id="why">
+  <div class="wrap why-grid">
+    <div>
+      <span class="eyebrow">Why Megha Associates</span>
+      <h2 class="dev" style="margin-top:14px;font-size:clamp(1.8rem,3.4vw,2.4rem)">साफ़ बिजली ऊपर, अपनी ज़मीन नीचे</h2>
+      <p class="dev" style="color:var(--muted);margin-top:14px">Durg की एक ही company जहाँ आपको solar solutions और verified land — दोनों का भरोसा मिलता है. सही price, साफ़ कागज़, और installation के बाद भी पूरी service.</p>
+      <ul class="why-list">
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>End-to-end solar</b><br><span class="dev">Rooftop, power plants और borewell solar pumps — सब एक छत के नीचे.</span></div></li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Clear-title land</b><br><span class="dev">Agriculture, commercial और residential plots — साफ़ कागज़ के साथ.</span></div></li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>After-sales service</b><br><span class="dev">Cleaning, checkup और repair — system सालों best perform करे.</span></div></li>
+      </ul>
+      <a class="btn btn-ink" href="#services">Know More</a>
+    </div>
+    <div class="why-visual">
+      <div class="vsun"></div>
+      <svg class="vhouse" width="200" height="200" viewBox="0 0 128 128" aria-hidden="true">
+        <path d="M20 82 L64 47 L108 82 Z" fill="#fff" opacity=".95"/>
+        <path d="M37 80 L64 58 L91 80 L64 80 Z" fill="#1C7C43"/>
+        <g stroke="#fff" stroke-width="2"><line x1="50.5" y1="69" x2="50.5" y2="80"/><line x1="64" y1="58" x2="64" y2="80"/><line x1="77.5" y1="69" x2="77.5" y2="80"/><line x1="46" y1="73" x2="82" y2="73"/></g>
+        <rect x="22" y="92" width="84" height="8" rx="4" fill="#7fe6a3"/><rect x="22" y="106" width="56" height="8" rx="4" fill="#fff" opacity=".6"/>
+      </svg>
+      <div class="exp-badge"><b>Durg</b><span>Local &amp; trusted</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES GRID ============ -->
+<section class="sec" id="services" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="dev">Solar और Land — पूरी range</h2>
+      <p class="dev">अपनी ज़रूरत चुनिए. हर service पर free guidance और site visit मिलती है.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="scard">
+        <div class="stop solar"><span class="pill">Solar</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#F6B400"/><g stroke="#F6B400" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="7" y2="7"/><line x1="17" y1="17" x2="19" y2="19"/><line x1="19" y1="5" x2="17" y2="7"/><line x1="7" y1="17" x2="5" y2="19"/></g></svg></div>
+        <div class="sbody"><h4>Rooftop Solar Systems</h4><p class="dev">घर, दुकान या ऑफिस की छत पर on-grid solar. महीने का बिजली बिल कम और सरकारी सब्सिडी का पूरा फायदा.</p><a class="more" href="#contact">Enquire →</a></div>
+      </div>
+      <div class="scard">
+        <div class="stop plant"><span class="pill">Solar</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="18" height="3" rx="1" fill="#fff"/><path d="M5 13l1.5-7h11L19 13" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M9 6v7M15 6v7" stroke="#fff" stroke-width="2"/></svg></div>
+        <div class="sbody"><h4>Solar Power Plant + Service</h4><p class="dev">पूरा plant — survey से commissioning तक Megha खुद install करती है, plus cleaning, checkup और repair की full service.</p><a class="more" href="#contact">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop gold"><span class="pill">Solar</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 3s5 6 5 10a5 5 0 01-10 0c0-4 5-10 5-10z" fill="#fff"/></svg></div>
+        <div class="sbody"><h4>Solar Water Pump (Borewell)</h4><p class="dev">बोरवेल और खेत के लिए सूरज से चलने वाला submersible pump. ना डीज़ल का खर्चा, ना भारी बिजली बिल — सिंचाई के लिए perfect.</p><a class="more" href="#contact">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop agri"><span class="pill">Land</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 20c2-4 4-6 8-6s6 2 8 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12 14V6M12 6c-2 0-3-2-3-4 2 0 3 1 3 4zM12 6c2 0 3-2 3-4-2 0-3 1-3 4z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="sbody"><h4>Agriculture Land</h4><p class="dev">खेती के लिए उपजाऊ ज़मीन — पानी और रास्ते की सुविधा के साथ. Investment और farming दोनों के लिए.</p><a class="more" href="#contact" data-land="Agriculture Land">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop comm"><span class="pill">Land</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="1" stroke="#fff" stroke-width="2"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div class="sbody"><h4>Commercial Land</h4><p class="dev">दुकान, showroom, godown या office के लिए road-facing commercial plots. High footfall locations.</p><a class="more" href="#contact" data-land="Commercial Land">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop resi"><span class="pill">Land</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 20V10l8-6 8 6v10M9 20v-6h6v6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="sbody"><h4>Residential Land</h4><p class="dev">घर बनाने के लिए approved residential plots — बढ़ती colony और सुविधाओं के पास.</p><a class="more" href="#contact" data-land="Residential Land">Enquire →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRANDS STRIP ============ -->
+<div class="brands">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow">Brands we install</span>
+    <h2 class="dev" style="margin-top:12px;font-size:1.6rem">भरोसेमंद companies के products</h2>
+    <div class="brand-row">
+      <div class="brand-chip">SATVIK<small>Solar Panel</small></div>
+      <div class="brand-chip">WAAREE<small>Solar Panel</small></div>
+      <div class="brand-chip">ADANI<small>Solar Panel</small></div>
+      <div class="brand-chip">POLYCAB<small>Inverter</small></div>
+      <div class="brand-chip">DEYE<small>Inverter</small></div>
+      <div class="brand-chip">HAVELLS<small>ACDB / DCDB</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b data-target="108000" data-prefix="₹">₹0</b><span>Subsidy तक</span></div>
+    <div class="stat"><b data-target="25" data-suffix="+ yrs">0</b><span>Panel warranty</span></div>
+    <div class="stat"><b data-target="20" data-suffix=" days">0</b><span>Install time</span></div>
+    <div class="stat"><b data-target="3" data-suffix=" brands">0</b><span>Tier-1 panels</span></div>
+  </div>
+</div>
+
+<!-- ============ ESTIMATOR ============ -->
+<section class="sec" id="estimate">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Solar Calculator</span><h2 class="dev">अपना बिजली बिल डालिए, बचत देखिए</h2><p class="dev">एक rough अंदाज़ा — सही figure free site visit पर मिलेगा.</p></div>
+    <div class="estimate">
+      <div>
+        <h3 class="dev">कितने KW का system चाहिए?</h3>
+        <p class="dev" style="color:var(--muted);margin:10px 0 22px;font-size:.95rem">अपना average monthly electricity bill डालिए और estimate देखिए.</p>
+        <label for="bill">Average monthly electricity bill</label>
+        <div class="ipt"><span>₹</span><input type="number" id="bill" min="0" placeholder="3000" value="3000" inputmode="numeric"></div>
+      </div>
+      <div class="est-out">
+        <div class="row"><span>Suggested system size</span><b id="o-size">2.5 KW</b></div>
+        <div class="row"><span>Est. monthly savings</span><b id="o-save">₹2,700</b></div>
+        <div class="row"><span>Est. yearly savings</span><b id="o-year">₹32,400</b></div>
+        <p class="disc dev">*Indicative only — ~₹8/unit और 4 units/kW/day के आधार पर. Actual generation छत, shade और मौसम पर निर्भर.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY STRIP ============ -->
+<div class="strip" id="benefits">
+  <div class="wrap">
+    <div><span class="ic">💰</span> बिजली का खर्च कम</div>
+    <div><span class="ic">📈</span> बचत ज़्यादा</div>
+    <div><span class="ic">🌱</span> पर्यावरण के लिए बेहतर</div>
+    <div><span class="ic">🛡️</span> 25 साल वारंटी</div>
+    <div><span class="ic">⚙️</span> कम maintenance</div>
+  </div>
+</div>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Customers Speak</span><h2 class="dev">लोगों का भरोसा</h2><p class="dev">Megha Associates के कुछ customers के अनुभव.</p></div>
+    <div class="tcar">
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"3KW solar लगवाया, बिजली बिल आधा से भी कम हो गया. Team time पर आई और काम साफ़-सुथरा किया."</p><div class="who"><span class="av">R</span><div><b>Rajesh Verma</b><span>Borsi, Durg</span></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"खेत के लिए solar pump लगवाया — अब diesel का खर्चा खत्म. सिंचाई आराम से हो जाती है."</p><div class="who"><span class="av">S</span><div><b>Suresh Sahu</b><span>Patan, Durg</span></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"Residential plot Megha से लिया, कागज़ बिल्कुल clear थे और process आसान रहा. Recommend करता हूँ."</p><div class="who"><span class="av">P</span><div><b>Priya Tandon</b><span>Bhilai</span></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"Subsidy का पूरा process उन्होंने संभाला. घर बैठे paperwork हो गया, कोई tension नहीं."</p><div class="who"><span class="av">A</span><div><b>Amit Dewangan</b><span>Durg</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="ctaband">
+      <div>
+        <h3 class="dev">Switch to Solar — आज ही!</h3>
+        <p class="dev">Free site visit book कीजिए या land के बारे में पूछिए.</p>
+      </div>
+      <div class="acts">
+        <a class="btn btn-sun" href="#contact">Get in Touch</a>
+        <a class="btn btn-wa" href="https://wa.me/917828826316" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wa"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / TIPS ============ -->
+<section class="sec" id="blog" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Tips &amp; Guides</span><h2 class="dev">Solar और land — काम की बातें</h2></div>
+    <div class="blog-grid">
+      <article class="bcard"><div class="bimg a"><svg width="46" height="46" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#fff"/><g stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></g></svg></div><div class="bbody"><span class="btag">Solar</span><h4 class="dev">घर के लिए कितने KW का solar चाहिए?</h4><p class="dev">अपने बिजली बिल से system size कैसे निकालें — एक simple guide.</p><a class="more" href="#estimate">Read more →</a></div></article>
+      <article class="bcard"><div class="bimg b"><svg width="46" height="46" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 015 0c0 2-2.5 2-2.5 4M12 17h.01" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div class="bbody"><span class="btag">Subsidy</span><h4 class="dev">PM Surya Ghar subsidy कैसे मिलती है?</h4><p class="dev">₹1,08,000 तक subsidy के लिए eligibility और process समझिए.</p><a class="more" href="#contact">Read more →</a></div></article>
+      <article class="bcard"><div class="bimg c"><svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M4 20V10l8-6 8 6v10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="bbody"><span class="btag">Real Estate</span><h4 class="dev">ज़मीन खरीदने से पहले क्या check करें?</h4><p class="dev">Title, layout approval और location — plot लेने से पहले की checklist.</p><a class="more" href="#contact">Read more →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Get in touch</span><h2 class="dev">आज ही बात कीजिए</h2><p class="dev">Form भरिए — यह सीधे WhatsApp पर हमारे पास आ जाएगा.</p></div>
+    <div class="contact-grid">
+      <div class="cinfo">
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z" stroke="#F6B400" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="#F6B400" stroke-width="2"/></svg></span><div><b>Visit us</b><span>Megha Solar Energy, Kadam Plaza, Shop No. 12, Borsi, Durg (C.G.)</span></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22"><use href="#wa"/></svg></span><div><b>Call / WhatsApp</b><span>+91 78288 26316</span></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#F6B400" stroke-width="2"/><path d="m3 7 9 6 9-6" stroke="#F6B400" stroke-width="2"/></svg></span><div><b>Email</b><span>meghasolarenergy2505@gmail.com</span></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#F6B400" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#F6B400" stroke-width="2" stroke-linecap="round"/></svg></span><div><b>Hours</b><span>Mon–Sat, 10:00 AM – 7:00 PM</span></div></div>
+      </div>
+      <div class="cform">
+        <h3 class="dev">Enquiry भेजिए</h3>
+        <p class="dev">नीचे भरिए, हम जल्दी संपर्क करेंगे.</p>
+        <div class="field"><label for="cn">Name</label><input id="cn" placeholder="आपका नाम"></div>
+        <div class="frow">
+          <div class="field"><label for="cp">Phone</label><input id="cp" placeholder="10-digit mobile" inputmode="numeric"></div>
+          <div class="field"><label for="cs">Service</label>
+            <select id="cs">
+              <option>Rooftop Solar</option>
+              <option>Solar Power Plant</option>
+              <option>Solar Water Pump (Borewell)</option>
+              <option>Agriculture Land</option>
+              <option>Commercial Land</option>
+              <option>Residential Land</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="cm">Message</label><textarea id="cm" rows="3" placeholder="जैसे: 3KW solar के लिए site visit चाहिए"></textarea></div>
+        <button class="btn btn-wa" style="width:100%;justify-content:center" id="sendwa"><svg width="18" height="18"><use href="#wa"/></svg> Send on WhatsApp →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <b>Megha Associates</b>
+        <p class="dev">ज़मीन से आसमान तक — Durg की भरोसेमंद solar और real estate company. Clean energy, bright future.</p>
+        <div class="fsoc">
+          <a href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1.5C18.7 1.4 17.5 1 16 1c-3 0-5 1.8-5 5.2V9H7v4h4v9h2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/917828826316" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15"><use href="#wa"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Solar</h4>
+        <a class="fl" href="#services">Rooftop Solar</a>
+        <a class="fl" href="#services">Solar Power Plant</a>
+        <a class="fl" href="#services">Solar Water Pump</a>
+        <a class="fl" href="#estimate">Solar Calculator</a>
+      </div>
+      <div>
+        <h4>Real Estate</h4>
+        <a class="fl" href="#services">Agriculture Land</a>
+        <a class="fl" href="#services">Commercial Land</a>
+        <a class="fl" href="#services">Residential Land</a>
+        <a class="fl" href="#blog">Tips &amp; Guides</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a class="fl" href="tel:7828826316">+91 78288 26316</a>
+        <a class="fl" href="mailto:meghasolarenergy2505@gmail.com">meghasolarenergy2505@gmail.com</a>
+        <a class="fl" href="#contact">Kadam Plaza, Shop 12, Borsi, Durg</a>
+        <a class="fl" href="#contact">Mon–Sat, 10 AM – 7 PM</a>
+      </div>
+    </div>
+    <div class="areas">
+      <h4>Areas we serve</h4>
+      <span>Durg · Bhilai · Borsi · Patan · Rajnandgaon · Raipur · Dhamtari · Bemetara</span>
+    </div>
+    <div class="fbot">
+      <span>© <span id="yr"></span> Megha Associates. All rights reserved.</span>
+      <span class="ownerlink" id="ownerlink">Owner Login · Quotation Generator</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP WIDGET ============ -->
+<div class="fab">
+  <a class="wa-widget" href="https://wa.me/917828826316" target="_blank" rel="noopener">
+    <span>Chat on WhatsApp</span>
+    <span class="ico"><svg width="26" height="26" style="color:#fff"><use href="#wa"/></svg></span>
+  </a>
+  <a class="call" href="tel:7828826316" aria-label="Call">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2c1 2 3 4 5 5l2-3 5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+<!-- ============ OWNER MODAL ============ -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Owner quotation generator">
+    <div class="modal-head"><h3 id="modaltitle">🔒 Owner Login</h3><button class="x" id="closeModal" aria-label="Close">✕</button></div>
+    <div class="modal-body">
+      <div class="gate" id="gate">
+        <div class="lock"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#E08A00" stroke-width="2"/><path d="M8 11V8a4 4 0 018 0v3" stroke="#E08A00" stroke-width="2"/></svg></div>
+        <h4>Quotation Generator</h4><p class="dev">यह सिर्फ़ owner के लिए है. Password डालिए.</p>
+        <input type="password" id="pw" placeholder="Password" autocomplete="off">
+        <div class="err" id="pwerr"></div>
+        <button class="btn btn-ink" style="width:100%;justify-content:center;margin-top:6px" id="loginbtn">Unlock →</button>
+      </div>
+      <div class="builder hidden" id="builder">
+        <div class="tabs"><button class="on" id="tab-solar">☀️ Solar Quotation</button><button id="tab-land">🌱 Land Quotation</button></div>
+        <div class="frow"><div><label>Quotation / Ref No.</label><input id="q-ref" value="MA/25-26/001"></div><div><label>Date</label><input type="date" id="q-date"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>Customer name</label><input id="q-cname" placeholder="Mr. Umesh Singh"></div><div><label>Customer address</label><input id="q-caddr" placeholder="Meenakshi Nagar, Durg (C.G.)"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>Customer phone</label><input id="q-cphone" placeholder="98xxxxxxxx"></div><div id="kwfield"><label>System size (title)</label><input id="q-size" value="5 KW"></div></div>
+        <div class="items-head"><h4 id="itemsLabel">System / Items</h4><button class="addrow" id="addItem">+ Add row</button></div>
+        <div id="rows"></div>
+        <div class="totbar"><div><label id="baseLabel">Base amount (₹, before GST)</label><input type="number" id="q-base" value="276190" inputmode="numeric"></div><div><label>GST %</label><input type="number" id="q-gst" value="5" inputmode="numeric"></div></div>
+        <div class="totbar" style="margin-top:10px;background:var(--ink);color:#fff;border:0"><div style="display:flex;justify-content:space-between"><span>GST amount</span><b id="t-gst" style="font-family:Sora">₹13,810</b></div><div style="display:flex;justify-content:space-between"><span>Total</span><b id="t-total" style="font-family:Sora;color:var(--sun)">₹2,90,000</b></div></div>
+        <div id="solarExtra">
+          <div class="items-head"><h4>Subsidy &amp; Terms</h4></div>
+          <div class="frow"><div><label>Govt. subsidy note (₹)</label><input id="q-subsidy" value="1,08,000"></div><div><label>Offer validity</label><input id="q-valid" value="7 days"></div></div>
+          <div class="frow" style="margin-top:10px"><div><label>Payment terms</label><input id="q-pay" value="100% Advance"></div><div><label>Delivery &amp; Installation</label><input id="q-deliv" value="20 Days"></div></div>
+        </div>
+        <div class="items-head"><h4>Your bank details (editable)</h4></div>
+        <div class="frow"><div><label>Account name</label><input id="q-bname" value="Megha Associates"></div><div><label>Bank &amp; Branch</label><input id="q-bbank" placeholder="UCO Bank, ___ Branch"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>Account No.</label><input id="q-bacc" placeholder="XXXXXXXXXXXX"></div><div><label>IFSC</label><input id="q-bifsc" placeholder="UCBA00XXXXX"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>GSTIN</label><input id="q-gstin" placeholder="22XXXXXXXXXXXZX"></div><div><label>Company contact</label><input id="q-cocontact" value="7828826316"></div></div>
+        <div class="btnbar"><button class="btn btn-line" id="previewBtn">👁 Preview</button><button class="btn btn-sun" id="printBtn">🖨 Print / Save PDF</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sheet-wrap" id="sheetWrap"><div id="sheet"></div></div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('q-date').value=new Date().toISOString().slice(0,10);
+
+/* mobile menu */
+const nav=document.getElementById('navlinks');
+document.getElementById('menubtn').addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+/* estimator */
+const RATE=8,GEN=4;
+function fmt(n){return '₹'+Math.round(n).toLocaleString('en-IN')}
+function estimate(){
+  const bill=Math.max(0,+document.getElementById('bill').value||0);
+  const kw=Math.max(1,Math.round((bill/RATE/(GEN*30))*2)/2);
+  document.getElementById('o-size').textContent=kw+' KW';
+  const save=bill*0.9;
+  document.getElementById('o-save').textContent=fmt(save);
+  document.getElementById('o-year').textContent=fmt(save*12);
+}
+document.getElementById('bill').addEventListener('input',estimate);estimate();
+
+/* stat counters */
+function animateStat(el){
+  const t=+el.dataset.target,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'';
+  let s=null;const dur=1400;
+  function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/dur,1);const v=Math.floor(p*t);
+    el.textContent=pre+v.toLocaleString('en-IN')+suf;if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+}
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){animateStat(e.target);io.unobserve(e.target);}})},{threshold:.5});
+document.querySelectorAll('.stat b').forEach(el=>io.observe(el));
+
+/* contact -> whatsapp */
+document.getElementById('sendwa').addEventListener('click',()=>{
+  const n=document.getElementById('cn').value||'—',p=document.getElementById('cp').value||'—',s=document.getElementById('cs').value,m=document.getElementById('cm').value||'—';
+  window.open(`https://wa.me/917828826316?text=Namaste Megha Associates! 👋%0A%0AName: ${n}%0APhone: ${p}%0AService: ${s}%0AMessage: ${m}`,'_blank');
+});
+document.querySelectorAll('[data-land]').forEach(el=>el.addEventListener('click',()=>{document.getElementById('cs').value=el.dataset.land;}));
+
+/* ===== OWNER QUOTATION GENERATOR ===== */
+const OWNER_PASSWORD="megha@2025"; /* ⚠️ owner: yahan apna password badlein */
+const overlay=document.getElementById('overlay'),gate=document.getElementById('gate'),builder=document.getElementById('builder');
+function openModal(){overlay.classList.add('show');document.body.style.overflow='hidden';}
+function closeModal(){overlay.classList.remove('show');document.body.style.overflow='';}
+document.getElementById('ownerlink').addEventListener('click',openModal);
+document.getElementById('closeModal').addEventListener('click',closeModal);
+overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal();});
+document.getElementById('loginbtn').addEventListener('click',tryLogin);
+document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')tryLogin();});
+function tryLogin(){
+  if(document.getElementById('pw').value===OWNER_PASSWORD){
+    gate.classList.add('hidden');builder.classList.remove('hidden');
+    document.getElementById('modaltitle').textContent='🧾 Quotation Generator';renderRows();
+  }else{document.getElementById('pwerr').textContent='गलत password. दोबारा कोशिश कीजिए.';}
+}
+const SOLAR_ROWS=[
+  ['05 KW Solar Module','SATVIK / WAAREE / ADANI','1 Set'],
+  ['Solar Inverter - 03KW 01ph','POLYCAB / DEYE','1 Set'],
+  ['Control Panel ACDB–DCDB','HAVELLS','1 Set'],
+  ['Cables, Wire & Accessories','HAVELLS','1 Set'],
+  ['Lightening Arrestor','WAAREE','1 Set'],
+  ['Earthing Kit (Chemical Earthing)','WAAREE','1 Set'],
+  ['Structure','Hot Dip Galvanized 2.5MM','1 Set'],
+  ['Installation, Electrical & Civil work','Done by Company','1 Job'],
+  ['Meter testing & synchronization','Done by Company','1 Job'],
+];
+const LAND_ROWS=[['Residential Plot','Clear title / approved layout','1200 sq.ft']];
+let mode='solar';const rowsEl=document.getElementById('rows');
+function rowHTML(it,mk,q){return `<div class="frow3"><div><label>Item / Description</label><input class="r-item" value="${it||''}"></div><div><label>Make / Details</label><input class="r-make" value="${mk||''}"></div><div><label>Qty</label><input class="r-qty" value="${q||''}"></div><button class="delrow" title="Remove">✕</button></div>`;}
+function renderRows(){rowsEl.innerHTML=(mode==='solar'?SOLAR_ROWS:LAND_ROWS).map(r=>rowHTML(r[0],r[1],r[2])).join('');bindDel();}
+function bindDel(){rowsEl.querySelectorAll('.delrow').forEach(b=>b.onclick=()=>b.closest('.frow3').remove());}
+document.getElementById('addItem').addEventListener('click',()=>{rowsEl.insertAdjacentHTML('beforeend',rowHTML('','',''));bindDel();});
+function setMode(m){
+  mode=m;
+  document.getElementById('tab-solar').classList.toggle('on',m==='solar');
+  document.getElementById('tab-land').classList.toggle('on',m==='land');
+  document.getElementById('solarExtra').style.display=m==='solar'?'block':'none';
+  document.getElementById('kwfield').style.display=m==='solar'?'block':'none';
+  document.getElementById('itemsLabel').textContent=m==='solar'?'System / Items':'Property / Items';
+  document.getElementById('baseLabel').textContent=m==='solar'?'Base amount (₹, before GST)':'Land price (₹, before GST)';
+  document.getElementById('q-gst').value=m==='land'?'0':'5';
+  renderRows();calcTotals();
+}
+document.getElementById('tab-solar').addEventListener('click',()=>setMode('solar'));
+document.getElementById('tab-land').addEventListener('click',()=>setMode('land'));
+function calcTotals(){
+  const base=+document.getElementById('q-base').value||0,gstpct=+document.getElementById('q-gst').value||0;
+  const gst=base*gstpct/100,total=base+gst;
+  document.getElementById('t-gst').textContent=fmt(gst);
+  document.getElementById('t-total').textContent=fmt(total);
+  return{base,gst,total,gstpct};
+}
+['q-base','q-gst'].forEach(id=>document.getElementById(id).addEventListener('input',calcTotals));
+function numToWords(num){
+  num=Math.round(num);if(num===0)return 'Zero';
+  const a=['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'];
+  const b=['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety'];
+  function two(n){return n<20?a[n]:b[Math.floor(n/10)]+(n%10?' '+a[n%10]:'');}
+  function three(n){return n>99?a[Math.floor(n/100)]+' Hundred'+(n%100?' '+two(n%100):''):two(n);}
+  let s='';const cr=Math.floor(num/10000000);num%=10000000;const l=Math.floor(num/100000);num%=100000;const t=Math.floor(num/1000);num%=1000;
+  if(cr)s+=three(cr)+' Crore ';if(l)s+=two(l)+' Lakh ';if(t)s+=two(t)+' Thousand ';if(num)s+=three(num);return s.trim();
+}
+function gatherRows(){return[...rowsEl.querySelectorAll('.frow3')].map((r,i)=>({no:i+1,item:r.querySelector('.r-item').value,make:r.querySelector('.r-make').value,qty:r.querySelector('.r-qty').value}));}
+function val(id){return document.getElementById(id).value;}
+function buildSheet(){
+  const {base,gst,total,gstpct}=calcTotals();const rows=gatherRows();const isSolar=mode==='solar';
+  const title=isSolar?`QUOTATION — ${val('q-size')}`:'LAND QUOTATION';
+  const rowsHTML=rows.map(r=>`<tr><td style="text-align:center">${r.no}</td><td>${r.item}</td><td>${r.make}</td><td style="text-align:center">${r.qty}</td></tr>`).join('');
+  const subsidy=isSolar?`<div class="q-sub">As per Govt. Regulations — Subsidy ₹${val('q-subsidy')} /-</div>`:'';
+  const terms=isSolar?`<div class="q-section"><h5>Terms &amp; Conditions</h5><div class="q-tc"><div><b>Payment:</b> ${val('q-pay')}</div><div><b>Delivery &amp; Installation:</b> ${val('q-deliv')}</div><div><b>Handling Charges:</b> Inclusive</div><div><b>Warranty:</b> Solar Panel 25 yrs · Inverter 7 yrs · ACDB/DCDB 2 yrs (as per company clause)</div><div><b>Offer Validity:</b> ${val('q-valid')}</div></div></div>`:`<div class="q-section"><h5>Terms &amp; Conditions</h5><div class="q-tc"><div><b>Payment:</b> As per agreement</div><div><b>Documentation:</b> Registry &amp; clear title transfer included</div><div><b>Offer Validity:</b> 15 days</div></div></div>`;
+  document.getElementById('sheet').innerHTML=`
+    <div class="q-top"><div><div class="q-co">MEGHA ASSOCIATES<small>SOLAR · REAL ESTATE</small></div><div class="q-addr">Kadam Plaza, Shop No. 12, Borsi, Durg (C.G.)<br>Phone: ${val('q-cocontact')} &nbsp;|&nbsp; Email: meghasolarenergy2505@gmail.com<br>${val('q-gstin')?'GSTIN: '+val('q-gstin'):''}</div></div>
+      <svg class="q-logo" viewBox="0 0 128 128"><circle cx="64" cy="40" r="19" fill="#F6B400"/><path d="M20 82 L64 47 L108 82 Z" fill="#0A2540"/><path d="M37 80 L64 58 L91 80 L64 80 Z" fill="#1C7C43"/></svg></div>
+    <div class="q-meta"><div><b>Ref No.:</b> ${val('q-ref')}</div><div><b>Date:</b> ${val('q-date')}</div></div>
+    <div style="font-size:12px"><b>To:</b> ${val('q-cname')||'—'}${val('q-cphone')?' ('+val('q-cphone')+')':''}<br>${val('q-caddr')||''}</div>
+    <div class="q-title">${title}</div>
+    <table><thead><tr><th style="width:34px;text-align:center">S.No</th><th>Item</th><th>Make / Details</th><th style="width:70px;text-align:center">Qty</th></tr></thead><tbody>${rowsHTML}</tbody></table>
+    <div class="q-amt"><table><tr><td>${isSolar? val('q-size')+' On-Grid Solar System (with installation)':'Land / Property value'}</td><td style="text-align:right">${fmt(base)}/-</td></tr><tr><td>GST (${gstpct}%)</td><td style="text-align:right">${fmt(gst)}/-</td></tr><tr class="grand"><td>Total Amount</td><td style="text-align:right">${fmt(total)}/-</td></tr></table></div>
+    <div class="q-words">In words: ${numToWords(total)} Rupees only</div>
+    ${subsidy}
+    <div class="q-grid2">${terms}<div class="q-section"><h5>Bank Details</h5><div class="q-bank"><div><b>Name:</b> ${val('q-bname')}</div><div><b>Bank:</b> ${val('q-bbank')||'—'}</div><div><b>A/C No.:</b> ${val('q-bacc')||'—'}</div><div><b>IFSC:</b> ${val('q-bifsc')||'—'}</div></div></div></div>
+    <div class="q-foot"><div class="q-thanks">Thank you for your business! 🌞</div><div class="q-sign"><b>For Megha Associates</b><br><br>______________________<br>Authorised Signatory</div></div>`;
+}
+document.getElementById('previewBtn').addEventListener('click',()=>{buildSheet();const w=document.getElementById('sheetWrap');w.style.display='block';w.style.position='relative';w.style.marginTop='24px';w.scrollIntoView({behavior:'smooth'});});
+document.getElementById('printBtn').addEventListener('click',()=>{buildSheet();window.print();});
+</script>
+</body>
+</html>
