@@ -28,7 +28,7 @@ img{max-width:100%;display:block}
 .eyebrow{font-family:"Sora";font-weight:600;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sun-deep)}
 .eyebrow.green{color:var(--land)}
 :focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:6px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:"Sora";font-weight:600;font-size:.95rem;padding:.85rem 1.4rem;border-radius:999px;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:"Sora";font-weight:600;font-size:.95rem;padding:.85rem 1.4rem;border-radius:999px;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
 .btn:hover{transform:translateY(-2px)}
 .btn-sun{background:var(--sun);color:var(--ink);box-shadow:0 10px 24px -10px rgba(224,138,0,.7)}
 .btn-ink{background:var(--ink);color:#fff}
@@ -75,10 +75,10 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 
 /* ============ HERO ============ */
 .hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 80% -10%, #1b4a7d 0%, var(--ink) 46%, #071a30 100%);color:#fff}
-.hero .wrap{position:relative;z-index:3;padding-top:50px;padding-bottom:80px}
+.hero .wrap{position:relative;z-index:3;padding-top:74px;padding-bottom:84px}
 .sun-arc{position:absolute;right:-6%;top:-24%;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(246,180,0,.95) 0%,rgba(246,180,0,.5) 38%,rgba(246,180,0,0) 70%);filter:blur(2px);z-index:1}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
-.hero h1{color:#fff;font-size:clamp(2.1rem,4.5vw,3.5rem);font-weight:800}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.7rem);font-weight:800}
 .hero h1 .gold{color:var(--sun)}
 .hero .lede{margin-top:18px;font-size:1.1rem;color:#cfe0f0;max-width:32rem}
 .hero .cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
@@ -87,7 +87,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 .subcard:before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(246,180,0,.12),transparent 60%)}
 .subcard .tag{position:relative;display:inline-flex;align-items:center;gap:6px;background:var(--land);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.05em;padding:5px 12px;border-radius:999px}
 .subcard h3{position:relative;font-size:1.05rem;margin-top:14px;color:var(--ink-2);font-weight:600}
-.subcard .big{position:relative;font-family:"Sora";font-weight:800;font-size:2.8rem;color:var(--ink);margin:4px 0 2px}
+.subcard .big{position:relative;font-family:"Sora";font-weight:800;font-size:3rem;color:var(--ink);margin:4px 0 2px}
 .subcard .big small{font-size:1rem;color:var(--muted);font-weight:600}
 .subcard ul{position:relative;list-style:none;padding:0;margin:16px 0 0;display:grid;gap:9px}
 .subcard li{display:flex;align-items:center;gap:9px;font-size:.92rem;color:var(--slate);font-weight:500}
@@ -97,7 +97,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 .badges .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
 .badge{display:flex;align-items:center;gap:16px;padding:30px 26px;border-right:1px solid var(--line)}
 .badge:last-child{border-right:0}
-.badge .bic{width:52px;height:52px;border-radius:14px;background:rgba(246,180,0,.14);display:grid;place-items:center;flex:none;color:var(--sun-deep)}
+.badge .bic{width:52px;height:52px;border-radius:14px;background:rgba(246,180,0,.14);display:grid;place-items:center;flex:none}
 .badge h4{font-size:1.05rem}
 .badge p{font-size:.86rem;color:var(--muted)}
 
@@ -105,12 +105,12 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
 .why-list{list-style:none;padding:0;margin:22px 0 26px;display:grid;gap:14px}
 .why-list li{display:flex;gap:12px;align-items:flex-start}
-.why-list .tick{width:26px;height:26px;border-radius:8px;background:rgba(28,124,67,.12);display:grid;place-items:center;flex:none;margin-top:2px;color:var(--land)}
+.why-list .tick{width:26px;height:26px;border-radius:8px;background:rgba(28,124,67,.12);display:grid;place-items:center;flex:none;margin-top:2px}
 .why-list b{color:var(--ink);font-family:"Sora";font-size:.98rem}
 .why-list span{color:var(--muted);font-size:.92rem}
 .why-visual{position:relative;border-radius:24px;overflow:hidden;min-height:380px;background:linear-gradient(150deg,#14406e,#0a2540);display:grid;place-items:center}
 .why-visual .vsun{position:absolute;top:-40px;right:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(246,180,0,.9),rgba(246,180,0,0) 70%)}
-.why-visual .vhouse{position:relative;z-index:2;color:rgba(255,255,255,0.15)}
+.why-visual .vhouse{position:relative;z-index:2}
 .exp-badge{position:absolute;left:24px;bottom:24px;background:var(--sun);color:var(--ink);border-radius:16px;padding:16px 22px;box-shadow:0 12px 30px -10px rgba(0,0,0,.4);z-index:3}
 .exp-badge b{font-family:"Sora";font-size:1.8rem;display:block;line-height:1}
 .exp-badge span{font-size:.8rem;font-weight:600}
@@ -119,7 +119,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .scard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .18s,box-shadow .2s;display:flex;flex-direction:column}
 .scard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.scard .stop{height:96px;display:grid;place-items:center;position:relative;color:#fff}
+.scard .stop{height:96px;display:grid;place-items:center;position:relative}
 .scard .stop.solar{background:linear-gradient(140deg,#14406e,#0a2540)}
 .scard .stop.gold{background:linear-gradient(140deg,#f6b400,#c97e00)}
 .scard .stop.plant{background:linear-gradient(140deg,#1b4a7d,#0a2540)}
@@ -166,7 +166,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 .strip{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .strip .wrap{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;padding:40px 22px}
 .strip div{display:flex;align-items:center;gap:12px;font-weight:600;color:var(--ink);font-size:.95rem}
-.strip .ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none;color:var(--sun-deep)}
+.strip .ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none}
 
 /* ============ TESTIMONIALS ============ */
 .tcar{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px;-webkit-overflow-scrolling:touch}
@@ -204,7 +204,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.92);backdro
 /* ============ CONTACT ============ */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .cinfo .row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
-.cinfo .ic{width:46px;height:46px;border-radius:13px;background:var(--ink);display:grid;place-items:center;flex:none;color:var(--sun)}
+.cinfo .ic{width:46px;height:46px;border-radius:13px;background:var(--ink);display:grid;place-items:center;flex:none}
 .cinfo .row b{display:block;font-family:"Sora";color:var(--ink);font-size:1.02rem}
 .cinfo .row span{color:var(--muted);font-size:.93rem}
 .cform{background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow)}
@@ -238,10 +238,10 @@ footer a.fl:hover{color:var(--sun)}
 .fab{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
 .wa-widget{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 7px 7px 16px;box-shadow:0 12px 30px -10px rgba(0,0,0,.35);text-decoration:none}
 .wa-widget span{font-family:"Sora";font-weight:600;font-size:.9rem;color:var(--ink)}
-.wa-widget .ico{width:44px;height:44px;border-radius:50%;background:var(--wa);display:grid;place-items:center;flex:none;color:#white}
-.fab .call{width:52px;height:52px;border-radius:50%;background:var(--ink);display:grid;place-items:center;align-self:flex-end;box-shadow:0 12px 28px -8px rgba(0,0,0,.4);color:#fff}
+.wa-widget .ico{width:44px;height:44px;border-radius:50%;background:var(--wa);display:grid;place-items:center;flex:none}
+.fab .call{width:52px;height:52px;border-radius:50%;background:var(--ink);display:grid;place-items:center;align-self:flex-end;box-shadow:0 12px 28px -8px rgba(0,0,0,.4)}
 
-/* ============ OWNER MODAL / QUOTATION ============ */
+/* ============ OWNER MODAL / QUOTATION (kept) ============ */
 .overlay{position:fixed;inset:0;background:rgba(7,20,38,.6);backdrop-filter:blur(4px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:30px 16px;overflow:auto}
 .overlay.show{display:flex}
 .modal{background:var(--paper);border-radius:22px;width:100%;max-width:920px;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);overflow:hidden}
@@ -250,7 +250,7 @@ footer a.fl:hover{color:var(--sun)}
 .modal-head .x{background:rgba(255,255,255,.12);border:0;color:#fff;width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:1.1rem}
 .modal-body{padding:26px}
 .gate{max-width:360px;margin:20px auto;text-align:center}
-.gate .lock{width:60px;height:60px;border-radius:16px;background:rgba(246,180,0,.16);display:grid;place-items:center;margin:0 auto 16px;color:var(--sun-deep)}
+.gate .lock{width:60px;height:60px;border-radius:16px;background:rgba(246,180,0,.16);display:grid;place-items:center;margin:0 auto 16px}
 .gate h4{font-size:1.3rem;margin-bottom:6px}
 .gate p{color:var(--muted);font-size:.92rem;margin-bottom:20px}
 .gate input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;font-size:1rem;text-align:center;letter-spacing:.1em}
@@ -318,15 +318,17 @@ footer a.fl:hover{color:var(--sun)}
 @media(max-width:560px){
   html,body{overflow-x:hidden}
   .frow,.frow3,.totbar{grid-template-columns:1fr}
+  /* top bar: no overlap, centered, auto height */
   .topbar .wrap{height:auto;min-height:38px;padding:7px 14px;flex-wrap:wrap;justify-content:center;gap:4px 14px}
   .topbar .left{gap:8px 14px;font-size:.78rem;justify-content:center}
   .topbar a[href^="mailto"],.topbar .sep,.topbar .socials{display:none}
   .fgrid{grid-template-columns:1fr}
+  /* floating buttons: clean green circle (no white blob) */
   .fab{right:16px;bottom:16px;gap:10px}
   .wa-widget{background:transparent;border:0;box-shadow:none;padding:0;gap:0}
   .wa-widget span{display:none}
-  .wa-widget .ico{width:54px;height:54px;box-shadow:0 12px 28px -8px rgba(0,0,0,.45);background:var(--wa)}
-  .fab .call{width:54px;height:54px}
+  .wa-widget .ico{width:54px;height:54px;box-shadow:0 12px 28px -8px rgba(0,0,0,.45)}
+  .fab .call{width:48px;height:48px}
 }
 @media print{
   html,body{background:#fff!important;height:auto!important}
@@ -342,10 +344,12 @@ footer a.fl:hover{color:var(--sun)}
   #sheet tr{page-break-inside:avoid}
   @page{margin:8mm;size:A4 portrait}
 }
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body id="top">
 
+<!-- WhatsApp official icon as reusable symbol -->
 <svg width="0" height="0" style="position:absolute"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.034zm5.443-7.428c-.183-.092-1.083-.534-1.251-.595-.168-.061-.29-.092-.412.092-.122.183-.473.595-.58.717-.107.122-.214.137-.397.046-.183-.092-.773-.285-1.472-.908-.544-.485-.911-1.084-1.018-1.267-.107-.183-.011-.282.08-.373.082-.082.183-.214.275-.32.091-.107.122-.184.183-.306.061-.122.03-.229-.015-.32-.046-.092-.412-.993-.564-1.36-.149-.357-.3-.308-.412-.314l-.351-.006a.673.673 0 00-.488.229c-.168.183-.641.627-.641 1.528 0 .901.657 1.772.748 1.894.092.122 1.292 1.973 3.13 2.766.438.189.78.302 1.046.387.44.14.84.12 1.156.073.353-.053 1.083-.443 1.235-.87.152-.428.152-.794.107-.87-.046-.077-.168-.123-.351-.214z"/></symbol></svg>
 
 <!-- ============ TOP BAR ============ -->
@@ -360,15 +364,16 @@ footer a.fl:hover{color:var(--sun)}
     <div class="socials">
       <a href="#" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1.5C18.7 1.4 17.5 1 16 1c-3 0-5 1.8-5 5.2V9H7v4h4v9h2z"/></svg></a>
       <a href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+      <a href="https://wa.me/917828826316" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="13" height="13"><use href="#wa"/></svg></a>
     </div>
   </div>
 </div>
 
-<!-- ============ HEADER / NAVIGATION ============ -->
+<!-- ============ HEADER ============ -->
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top">
-      <svg class="logo" viewBox="0 0 128 128">
+    <a class="brand" href="#top" aria-label="Megha Associates home">
+      <svg class="logo" viewBox="0 0 128 128" aria-hidden="true">
         <circle cx="64" cy="40" r="19" fill="#F6B400"/>
         <g stroke="#F6B400" stroke-width="4.4" stroke-linecap="round"><line x1="64" y1="8" x2="64" y2="17"/><line x1="40" y1="16" x2="45" y2="24"/><line x1="88" y1="16" x2="83" y2="24"/><line x1="26" y1="40" x2="35" y2="40"/><line x1="102" y1="40" x2="93" y2="40"/></g>
         <path d="M20 82 L64 47 L108 82 Z" fill="#0A2540"/>
@@ -383,20 +388,21 @@ footer a.fl:hover{color:var(--sun)}
         <span>Solar ▾</span>
         <div class="menu">
           <a href="#services">Rooftop Solar<small class="dev">घर, दुकान, office</small></a>
-          <a href="#services">Solar Power Plant<small>Industrial Setup</small></a>
-          <a href="#services">Solar Water Pump<small class="dev">सिंचाई / कृषि पंप</small></a>
+          <a href="#services">Solar Power Plant<small>Install + full service</small></a>
+          <a href="#services">Solar Water Pump<small class="dev">Borewell / सिंचाई</small></a>
         </div>
       </div>
       <div class="dd">
         <span>Real Estate ▾</span>
         <div class="menu">
-          <a href="#services">Agriculture Land<small class="dev">कृषि भूमि</small></a>
-          <a href="#services">Commercial Land<small class="dev">व्यापारिक प्लॉट</small></a>
-          <a href="#services">Residential Land<small class="dev">आवासीय प्लॉट</small></a>
+          <a href="#services">Agriculture Land<small class="dev">खेती के लिए</small></a>
+          <a href="#services">Commercial Land<small class="dev">दुकान / showroom</small></a>
+          <a href="#services">Residential Land<small class="dev">घर बनाने के लिए</small></a>
         </div>
       </div>
       <a href="#why">Why Us</a>
       <a href="#estimate">Calculator</a>
+      <a href="#blog">Tips</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-sun navcta" href="#contact">Free Site Visit</a>
     </nav>
@@ -404,873 +410,472 @@ footer a.fl:hover{color:var(--sun)}
   </div>
 </header>
 
-<!-- ============ HERO SECTION ============ -->
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="sun-arc"></div>
+  <div class="sun-arc" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Durg &middot; Raipur, Chhattisgarh</span>
-        <h1 class="dev" style="margin-top:12px;"><span class="gold">ज़मीन से आसमान</span> तक — Solar & Real Estate Solutions</h1>
-        <p class="dev lede">छत पर सोलर लगवाकर भारी सब्सिडी पाएं, खेतों में सोलर पंप से मुफ्त पानी चलाएं, या दुर्ग-रायपुर में बेहतरीन कमर्शियल एवं रेसिडेंशियल प्लॉट खरीदें।</p>
+        <span class="eyebrow">Durg · Raipur, Chhattisgarh</span>
+        <h1 class="dev" style="margin-top:14px">ज़मीन से <span class="gold">आसमान</span> तक — <span style="font-family:Sora">solar &amp; land, one trusted name</span></h1>
+        <p class="lede dev">छत पर solar लगवाइए और सरकारी सब्सिडी पाइए, खेत के लिए solar pump, या खरीदिए agriculture / commercial / residential ज़मीन — सब एक ही जगह, <b style="color:#fff">Megha Associates</b>.</p>
         <div class="cta-row">
-          <a href="#contact" class="btn btn-sun">Get Free Quote</a>
-          <a href="https://wa.me/917828826316" class="btn btn-wa" target="_blank"><svg width="18" height="18"><use href="#wa"/></svg> WhatsApp Us</a>
+          <a class="btn btn-sun" href="#contact">Get Free Quote</a>
+          <a class="btn btn-wa" href="https://wa.me/917828826316" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wa"/></svg> WhatsApp Us</a>
         </div>
-        <div class="mini">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Authorized Partner &bull; Satvik, Waaree, Adani Panels</span>
-        </div>
+        <div class="mini"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#7fe6a3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Satvik · Waaree · Adani panels &nbsp;•&nbsp; Free site visit</div>
       </div>
-      <div>
-        <div class="subcard">
-          <span class="tag">PM Surya Ghar Yojana</span>
-          <h3>Government Subsidy Benefit</h3>
-          <div class="big">₹1,08,000<small> Max</small></div>
-          <ul>
-            <li><span>&bull;</span> Up to ₹78,000 for 3kW Rooftop</li>
-            <li><span>&bull;</span> Seamless paperwork & net-metering</li>
-            <li><span>&bull;</span> 25 Years warranty on solar modules</li>
-          </ul>
-        </div>
+      <div class="subcard">
+        <span class="tag">★ सबसे बड़ी बात</span>
+        <h3 class="dev">Government Subsidy का फायदा</h3>
+        <div class="big">₹1,08,000 <small>तक*</small></div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Satvik / Waaree / Adani panels</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Fast installation &amp; expert team</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 25-year panel warranty</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Long-term savings का भरोसा</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ TRUST BADGES ============ -->
-<section class="badges">
+<div class="badges">
   <div class="wrap">
     <div class="badge">
-      <div class="bic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <div>
-        <h4>Govt Approved</h4>
-        <p>Subsidy adjustments done cleanly</p>
-      </div>
+      <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z" stroke="#E08A00" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#E08A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h4>Trusted Service</h4><p class="dev">सर्वे से synchronization तक — पूरा काम company खुद करती है.</p></div>
     </div>
     <div class="badge">
-      <div class="bic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-6 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5"/></svg></div>
-      <div>
-        <h4>Premium Real Estate</h4>
-        <p>Verified litigation-free layouts</p>
-      </div>
+      <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="#E08A00" stroke-width="2"/><path d="M3 9h18M9 4v12M15 4v12" stroke="#E08A00" stroke-width="1.5"/></svg></div>
+      <div><h4>Quality Panels</h4><p class="dev">सिर्फ़ tier-1 brands: Satvik, Waaree और Adani.</p></div>
     </div>
     <div class="badge">
-      <div class="bic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg></div>
-      <div>
-        <h4>100% Transparency</h4>
-        <p>No hidden commissions or extra costs</p>
-      </div>
+      <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E08A00" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 015 0c0 2-2.5 2-2.5 4M12 17h.01" stroke="#E08A00" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div><h4>Subsidy Help</h4><p class="dev">PM Surya Ghar subsidy का पूरा process हम संभालते हैं.</p></div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ============ SERVICES SECTION ============ -->
-<section id="services" class="sec">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Our Portfolio</span>
-      <h2>Dual Expertise: Solar Power & Verified Land</h2>
-      <p>Whether you want to harvest clean energy from the sun or secure your future with profitable real estate holdings in Chhattisgarh, we guide you at every step.</p>
-    </div>
-    
-    <div class="svc-grid">
-      <!-- Solar 1 -->
-      <div class="scard">
-        <div class="stop solar">
-          <span class="pill">Solar Energy</span>
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 18.36l1.42-1.42M18.36 4.22l1.42-1.42"/></svg>
-        </div>
-        <div class="sbody">
-          <h4>On-Grid Rooftop Solar</h4>
-          <p>Ideal for homes, hospitals, schools, and offices. Zero out your daylight electricity usage and transfer surplus units back to the CSPDCL grid.</p>
-          <a href="#contact" class="more">Inquire Now &rarr;</a>
-        </div>
-      </div>
-      <!-- Solar 2 -->
-      <div class="scard">
-        <div class="stop plant">
-          <span class="pill">Industrial</span>
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 21H2V3l7 4 7-4 6 4v14z"/></svg>
-        </div>
-        <div class="sbody">
-          <h4>Commercial Power Plants</h4>
-          <p>High-capacity solar setups for rice mills, factories, and commercial buildings. Avail accelerated depreciation benefits and reduce operating costs.</p>
-          <a href="#contact" class="more">Inquire Now &rarr;</a>
-        </div>
-      </div>
-      <!-- Solar 3 -->
-      <div class="scard">
-        <div class="stop gold">
-          <span class="pill">Agriculture Pump</span>
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-        </div>
-        <div class="sbody">
-          <h4>Solar Borewell Pumps</h4>
-          <p>High-efficiency DC/AC surface and submersible solar pumps for rural irrigation. Say goodbye to erratic voltage and costly diesel expenses.</p>
-          <a href="#contact" class="more">Inquire Now &rarr;</a>
-        </div>
-      </div>
-      
-      <!-- Land 1 -->
-      <div class="scard green">
-        <div class="stop agri">
-          <span class="pill">Real Estate</span>
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10zM2 12h20"/></svg>
-        </div>
-        <div class="sbody">
-          <h4>Agricultural Land</h4>
-          <p>Fertile farmland investments around Durg, Dhamdha, and Patan districts. High appreciation potential with clear title records.</p>
-          <a href="#contact" class="more">View Details &rarr;</a>
-        </div>
-      </div>
-      <!-- Land 2 -->
-      <div class="scard green">
-        <div class="stop comm">
-          <span class="pill">Plots</span>
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18"/></svg>
-        </div>
-        <div class="sbody">
-          <h4>Commercial Land</h4>
-          <p>Premium plots facing state highways and major bypass corridors. Ideal for retail stores, warehouses, marriage lawns, or showrooms.</p>
-          <a href="#contact" class="more">View Details &rarr;</a>
-        </div>
-      </div>
-      <!-- Land 3 -->
-      <div class="scard green">
-        <div class="stop resi">
-          <span class="pill">Housing</span>
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <div class="sbody">
-          <h4>Residential Plots</h4>
-          <p>Diversified options inside gated residential developments in Durg, Bhilai, and Raipur city limits. Fast connectivity with public utilities.</p>
-          <a href="#contact" class="more">View Details &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AUTHORIZED BRANDS STRIP ============ -->
-<section class="brands">
-  <div class="wrap">
-    <div style="text-align:center">
-      <span class="eyebrow">Tier-1 Components Only</span>
-    </div>
-    <div class="brand-row">
-      <div class="brand-chip">WAAREE<small>Solar Modules</small></div>
-      <div class="brand-chip">SATVIK<small>Green Energy</small></div>
-      <div class="brand-chip">ADANI<small>Solar Panels</small></div>
-      <div class="brand-chip">GROWATT<small>Smart Inverters</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY CHOOSE US ============ -->
-<section id="why" class="sec">
+<!-- ============ WHY US ============ -->
+<section class="sec" id="why">
   <div class="wrap why-grid">
     <div>
-      <span class="eyebrow green">Unmatched Reliability</span>
-      <h2 style="margin-top:10px;">Why Homeowners and Farmers Trust Megha Associates</h2>
-      <p style="margin-top:14px; color:var(--muted)">We operate directly out of Durg, cutting out fraudulent intermediaries. Every process—from structural site audits to regulatory approvals—stays in-house.</p>
-      
+      <span class="eyebrow">Why Megha Associates</span>
+      <h2 class="dev" style="margin-top:14px;font-size:clamp(1.8rem,3.4vw,2.4rem)">साफ़ बिजली ऊपर, अपनी ज़मीन नीचे</h2>
+      <p class="dev" style="color:var(--muted);margin-top:14px">Durg की एक ही company जहाँ आपको solar solutions और verified land — दोनों का भरोसा मिलता है. सही price, साफ़ कागज़, और installation के बाद भी पूरी service.</p>
       <ul class="why-list">
-        <li>
-          <div class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div><b>End-to-End Subsidy Support:</b> We handle your complete application upload, structural map planning, and net-meter setup.</div>
-        </li>
-        <li>
-          <div class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div><b>Clean Legal Registry:</b> Every real estate listing comes with an immaculate title check history with zero encumbrances.</div>
-        </li>
-        <li>
-          <div class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div><b>Durable Construction Quality:</b> We use hot-dip galvanized mounting structures that can withstand high winds.</div>
-        </li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>End-to-end solar</b><br><span class="dev">Rooftop, power plants और borewell solar pumps — सब एक छत के नीचे.</span></div></li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Clear-title land</b><br><span class="dev">Agriculture, commercial और residential plots — साफ़ कागज़ के साथ.</span></div></li>
+        <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="#1C7C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>After-sales service</b><br><span class="dev">Cleaning, checkup और repair — system सालों best perform करे.</span></div></li>
       </ul>
-      <a href="#contact" class="btn btn-ink">Schedule a Site Audit</a>
+      <a class="btn btn-ink" href="#services">Know More</a>
     </div>
-    
     <div class="why-visual">
       <div class="vsun"></div>
-      <svg class="vhouse" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-      <div class="exp-badge">
-        <b>10+</b>
-        <span>Years of Local Experience</span>
+      <svg class="vhouse" width="200" height="200" viewBox="0 0 128 128" aria-hidden="true">
+        <path d="M20 82 L64 47 L108 82 Z" fill="#fff" opacity=".95"/>
+        <path d="M37 80 L64 58 L91 80 L64 80 Z" fill="#1C7C43"/>
+        <g stroke="#fff" stroke-width="2"><line x1="50.5" y1="69" x2="50.5" y2="80"/><line x1="64" y1="58" x2="64" y2="80"/><line x1="77.5" y1="69" x2="77.5" y2="80"/><line x1="46" y1="73" x2="82" y2="73"/></g>
+        <rect x="22" y="92" width="84" height="8" rx="4" fill="#7fe6a3"/><rect x="22" y="106" width="56" height="8" rx="4" fill="#fff" opacity=".6"/>
+      </svg>
+      <div class="exp-badge"><b>Durg</b><span>Local &amp; trusted</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES GRID ============ -->
+<section class="sec" id="services" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="dev">Solar और Land — पूरी range</h2>
+      <p class="dev">अपनी ज़रूरत चुनिए. हर service पर free guidance और site visit मिलती है.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="scard">
+        <div class="stop solar"><span class="pill">Solar</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#F6B400"/><g stroke="#F6B400" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="7" y2="7"/><line x1="17" y1="17" x2="19" y2="19"/><line x1="19" y1="5" x2="17" y2="7"/><line x1="7" y1="17" x2="5" y2="19"/></g></svg></div>
+        <div class="sbody"><h4>Rooftop Solar Systems</h4><p class="dev">घर, दुकान या ऑफिस की छत पर on-grid solar. महीने का बिजली बिल कम और सरकारी सब्सिडी का पूरा फायदा.</p><a class="more" href="#contact">Enquire →</a></div>
+      </div>
+      <div class="scard">
+        <div class="stop plant"><span class="pill">Solar</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="3" y="13" width="18" height="3" rx="1" fill="#fff"/><path d="M5 13l1.5-7h11L19 13" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M9 6v7M15 6v7" stroke="#fff" stroke-width="2"/></svg></div>
+        <div class="sbody"><h4>Solar Power Plant + Service</h4><p class="dev">पूरा plant — survey से commissioning तक Megha खुद install करती है, plus cleaning, checkup और repair की full service.</p><a class="more" href="#contact">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop gold"><span class="pill">Solar</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 3s5 6 5 10a5 5 0 01-10 0c0-4 5-10 5-10z" fill="#fff"/></svg></div>
+        <div class="sbody"><h4>Solar Water Pump (Borewell)</h4><p class="dev">बोरवेल और खेत के लिए सूरज से चलने वाला submersible pump. ना डीज़ल का खर्चा, ना भारी बिजली बिल — सिंचाई के लिए perfect.</p><a class="more" href="#contact">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop agri"><span class="pill">Land</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 20c2-4 4-6 8-6s6 2 8 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M12 14V6M12 6c-2 0-3-2-3-4 2 0 3 1 3 4zM12 6c2 0 3-2 3-4-2 0-3 1-3 4z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="sbody"><h4>Agriculture Land</h4><p class="dev">खेती के लिए उपजाऊ ज़मीन — पानी और रास्ते की सुविधा के साथ. Investment और farming दोनों के लिए.</p><a class="more" href="#contact" data-land="Agriculture Land">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop comm"><span class="pill">Land</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="1" stroke="#fff" stroke-width="2"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div class="sbody"><h4>Commercial Land</h4><p class="dev">दुकान, showroom, godown या office के लिए road-facing commercial plots. High footfall locations.</p><a class="more" href="#contact" data-land="Commercial Land">Enquire →</a></div>
+      </div>
+      <div class="scard green">
+        <div class="stop resi"><span class="pill">Land</span><svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 20V10l8-6 8 6v10M9 20v-6h6v6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="sbody"><h4>Residential Land</h4><p class="dev">घर बनाने के लिए approved residential plots — बढ़ती colony और सुविधाओं के पास.</p><a class="more" href="#contact" data-land="Residential Land">Enquire →</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ INTERACTIVE SOLAR CALCULATOR ============ -->
-<section id="estimate" class="sec" style="background:var(--paper-2)">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Instant Estimation</span>
-      <h2>Calculate Your Rooftop Solar Savings</h2>
-      <p>Input your average monthly power bill to see the recommended plant size, total investment bracket, and immediate government subsidies.</p>
+<!-- ============ BRANDS STRIP ============ -->
+<div class="brands">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow">Brands we install</span>
+    <h2 class="dev" style="margin-top:12px;font-size:1.6rem">भरोसेमंद companies के products</h2>
+    <div class="brand-row">
+      <div class="brand-chip">SATVIK<small>Solar Panel</small></div>
+      <div class="brand-chip">WAAREE<small>Solar Panel</small></div>
+      <div class="brand-chip">ADANI<small>Solar Panel</small></div>
+      <div class="brand-chip">POLYCAB<small>Inverter</small></div>
+      <div class="brand-chip">DEYE<small>Inverter</small></div>
+      <div class="brand-chip">HAVELLS<small>ACDB / DCDB</small></div>
     </div>
-    
+  </div>
+</div>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b data-target="108000" data-prefix="₹">₹0</b><span>Subsidy तक</span></div>
+    <div class="stat"><b data-target="25" data-suffix="+ yrs">0</b><span>Panel warranty</span></div>
+    <div class="stat"><b data-target="20" data-suffix=" days">0</b><span>Install time</span></div>
+    <div class="stat"><b data-target="3" data-suffix=" brands">0</b><span>Tier-1 panels</span></div>
+  </div>
+</div>
+
+<!-- ============ ESTIMATOR ============ -->
+<section class="sec" id="estimate">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Solar Calculator</span><h2 class="dev">अपना बिजली बिल डालिए, बचत देखिए</h2><p class="dev">एक rough अंदाज़ा — सही figure free site visit पर मिलेगा.</p></div>
     <div class="estimate">
       <div>
-        <h3>Electricity Profile</h3>
-        <p style="color:var(--muted); font-size:0.9rem; margin-bottom:24px">Adjust the target number below to evaluate setup sizing:</p>
-        
-        <div style="margin-bottom:20px">
-          <label for="billInput">AVERAGE MONTHLY ELECTRICITY BILL (₹)</label>
-          <div class="ipt">
-            <span>₹</span>
-            <input type="number" id="billInput" value="3500" min="500" max="50000" />
-          </div>
-        </div>
-        
-        <p class="disc">*Calculations assume residential slab tariffs for Chhattisgarh State Power Distribution Company Limited (CSPDCL).</p>
+        <h3 class="dev">कितने KW का system चाहिए?</h3>
+        <p class="dev" style="color:var(--muted);margin:10px 0 22px;font-size:.95rem">अपना average monthly electricity bill डालिए और estimate देखिए.</p>
+        <label for="bill">Average monthly electricity bill</label>
+        <div class="ipt"><span>₹</span><input type="number" id="bill" min="0" placeholder="3000" value="3000" inputmode="numeric"></div>
       </div>
-      
       <div class="est-out">
-        <div class="row">
-          <span>Recommended System:</span>
-          <b id="outSize">3 kWp</b>
-        </div>
-        <div class="row">
-          <span>Required Roof Space:</span>
-          <b id="outSpace">300 sq.ft</b>
-        </div>
-        <div class="row">
-          <span>Central Govt Subsidy:</span>
-          <b id="outSubsidy" style="color:#25D366">₹78,000</b>
-        </div>
-        <div class="row">
-          <span>Estimated Payback Period:</span>
-          <b id="outPayback">3.5 Years</b>
-        </div>
+        <div class="row"><span>Suggested system size</span><b id="o-size">2.5 KW</b></div>
+        <div class="row"><span>Est. monthly savings</span><b id="o-save">₹2,700</b></div>
+        <div class="row"><span>Est. yearly savings</span><b id="o-year">₹32,400</b></div>
+        <p class="disc dev">*Indicative only — ~₹8/unit और 4 units/kW/day के आधार पर. Actual generation छत, shade और मौसम पर निर्भर.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ STRIP ITEMS ============ -->
-<section class="strip">
+<!-- ============ WHY STRIP ============ -->
+<div class="strip" id="benefits">
   <div class="wrap">
-    <div><div class="ic">✓</div> 25 Years Panel Warranty</div>
-    <div><div class="ic">✓</div> Direct Dealings - No Brokers</div>
-    <div><div class="ic">✓</div> Custom Engineering Drawings</div>
-    <div><div class="ic">✓</div> Dedicated Maintenance Support</div>
+    <div><span class="ic">💰</span> बिजली का खर्च कम</div>
+    <div><span class="ic">📈</span> बचत ज़्यादा</div>
+    <div><span class="ic">🌱</span> पर्यावरण के लिए बेहतर</div>
+    <div><span class="ic">🛡️</span> 25 साल वारंटी</div>
+    <div><span class="ic">⚙️</span> कम maintenance</div>
   </div>
-</section>
+</div>
 
-<!-- ============ TESTIMONIALS SECTION ============ -->
+<!-- ============ TESTIMONIALS ============ -->
 <section class="sec">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow green">Client Reviews</span>
-      <h2>What Our Customers Say</h2>
-      <p>Real feedback from local residents, agricultural landowners, and business managers across Durg division.</p>
-    </div>
-    
+    <div class="head"><span class="eyebrow">Customers Speak</span><h2 class="dev">लोगों का भरोसा</h2><p class="dev">Megha Associates के कुछ customers के अनुभव.</p></div>
     <div class="tcar">
-      <div class="tcard">
-        <div class="stars">★★★★★</div>
-        <p>"Our power bill dropped from ₹6,500 down to practically zero! Megha Associates managed everything seamlessly from subsidy generation to structural testing."</p>
-        <div class="who">
-          <div class="av">RK</div>
-          <div>
-            <b>Rajesh Kumar</b>
-            <span>Homeowner, Padmanabhpur (Durg)</span>
-          </div>
-        </div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"3KW solar लगवाया, बिजली बिल आधा से भी कम हो गया. Team time पर आई और काम साफ़-सुथरा किया."</p><div class="who"><span class="av">R</span><div><b>Rajesh Verma</b><span>Borsi, Durg</span></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"खेत के लिए solar pump लगवाया — अब diesel का खर्चा खत्म. सिंचाई आराम से हो जाती है."</p><div class="who"><span class="av">S</span><div><b>Suresh Sahu</b><span>Patan, Durg</span></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"Residential plot Megha से लिया, कागज़ बिल्कुल clear थे और process आसान रहा. Recommend करता हूँ."</p><div class="who"><span class="av">P</span><div><b>Priya Tandon</b><span>Bhilai</span></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p class="dev">"Subsidy का पूरा process उन्होंने संभाला. घर बैठे paperwork हो गया, कोई tension नहीं."</p><div class="who"><span class="av">A</span><div><b>Amit Dewangan</b><span>Durg</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="ctaband">
+      <div>
+        <h3 class="dev">Switch to Solar — आज ही!</h3>
+        <p class="dev">Free site visit book कीजिए या land के बारे में पूछिए.</p>
       </div>
-      
-      <div class="tcard">
-        <div class="stars">★★★★★</div>
-        <p>"Purchased 4 acres of agriculture land through them near Dhamdha. Clear documentation, transparent registry paperwork, and total compliance tracking."</p>
-        <div class="who">
-          <div class="av">MS</div>
-          <div>
-            <b>Mishra Singh</b>
-            <span>Investor, Raipur</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="tcard">
-        <div class="stars">★★★★★</div>
-        <p>"Installed a 5HP solar borewell pump on my farmland. Even during erratic monsoon weather patterns, the system generates robust water flow without any voltage faults."</p>
-        <div class="who">
-          <div class="av">ST</div>
-          <div>
-            <b>Satish Tiwari</b>
-            <span>Farmer, Patan</span>
-          </div>
-        </div>
+      <div class="acts">
+        <a class="btn btn-sun" href="#contact">Get in Touch</a>
+        <a class="btn btn-wa" href="https://wa.me/917828826316" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wa"/></svg> WhatsApp</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CALL TO ACTION BAND ============ -->
-<section class="wrap" style="margin-top:20px; margin-bottom:20px">
-  <div class="ctaband">
-    <div>
-      <h3>Ready to Switch to Solar or Secure a Premium Property?</h3>
-      <p>Schedule a face-to-face evaluation meeting with our operations team today.</p>
-    </div>
-    <div class="acts">
-      <a href="#contact" class="btn btn-sun">Book Site Consultation</a>
-      <a href="tel:7828826316" class="btn btn-ghost">Call Operational Desk</a>
+<!-- ============ BLOG / TIPS ============ -->
+<section class="sec" id="blog" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Tips &amp; Guides</span><h2 class="dev">Solar और land — काम की बातें</h2></div>
+    <div class="blog-grid">
+      <article class="bcard"><div class="bimg a"><svg width="46" height="46" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" fill="#fff"/><g stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></g></svg></div><div class="bbody"><span class="btag">Solar</span><h4 class="dev">घर के लिए कितने KW का solar चाहिए?</h4><p class="dev">अपने बिजली बिल से system size कैसे निकालें — एक simple guide.</p><a class="more" href="#estimate">Read more →</a></div></article>
+      <article class="bcard"><div class="bimg b"><svg width="46" height="46" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 015 0c0 2-2.5 2-2.5 4M12 17h.01" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div class="bbody"><span class="btag">Subsidy</span><h4 class="dev">PM Surya Ghar subsidy कैसे मिलती है?</h4><p class="dev">₹1,08,000 तक subsidy के लिए eligibility और process समझिए.</p><a class="more" href="#contact">Read more →</a></div></article>
+      <article class="bcard"><div class="bimg c"><svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M4 20V10l8-6 8 6v10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="bbody"><span class="btag">Real Estate</span><h4 class="dev">ज़मीन खरीदने से पहले क्या check करें?</h4><p class="dev">Title, layout approval और location — plot लेने से पहले की checklist.</p><a class="more" href="#contact">Read more →</a></div></article>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT & FORM SECTION ============ -->
-<section id="contact" class="sec">
-  <div class="wrap contact-grid">
-    <div class="cinfo">
-      <span class="eyebrow">Connect Today</span>
-      <h2 style="margin-top:12px; margin-bottom:20px">Let's Discuss Your Project Goals</h2>
-      <p style="color:var(--muted); margin-bottom:30px">Visit our corporate office for physical registry verification or customized engineering structural evaluations.</p>
-      
-      <div class="row">
-        <div class="ic"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div>
-          <b>Corporate Office Location</b>
-          <span>Durg Division, Chhattisgarh, India</span>
-        </div>
+<!-- ============ CONTACT ============ -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Get in touch</span><h2 class="dev">आज ही बात कीजिए</h2><p class="dev">Form भरिए — यह सीधे WhatsApp पर हमारे पास आ जाएगा.</p></div>
+    <div class="contact-grid">
+      <div class="cinfo">
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z" stroke="#F6B400" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="#F6B400" stroke-width="2"/></svg></span><div><b>Visit us</b><span>Megha Solar Energy, Kadam Plaza, Shop No. 12, Borsi, Durg (C.G.)</span></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22"><use href="#wa"/></svg></span><div><b>Call / WhatsApp</b><span>+91 78288 26316</span></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#F6B400" stroke-width="2"/><path d="m3 7 9 6 9-6" stroke="#F6B400" stroke-width="2"/></svg></span><div><b>Email</b><span>meghasolarenergy2505@gmail.com</span></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#F6B400" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#F6B400" stroke-width="2" stroke-linecap="round"/></svg></span><div><b>Hours</b><span>Mon–Sat, 10:00 AM – 7:00 PM</span></div></div>
       </div>
-      <div class="row">
-        <div class="ic"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h12l-1.5 5h-9L3 5zm13.5 0h4.5v14H3v-4"/></svg></div>
-        <div>
-          <b>Direct Helpline Callout</b>
-          <span>+91 78288 26316</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="ic"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        <div>
-          <b>Operational Email Address</b>
-          <span>meghasolarenergy2505@gmail.com</span>
-        </div>
-      </div>
-    </div>
-    
-    <div>
       <div class="cform">
-        <h3>Request Consultation</h3>
-        <p>Drop your inquiry variables below and our field consultants will call you back within 2 business hours.</p>
-        
-        <form action="#" method="POST" onsubmit="alert('Thank you for contacting Megha Associates. We will get back to you shortly.'); return false;">
-          <div class="field">
-            <label>YOUR NAME</label>
-            <input type="text" placeholder="Enter full name" required />
+        <h3 class="dev">Enquiry भेजिए</h3>
+        <p class="dev">नीचे भरिए, हम जल्दी संपर्क करेंगे.</p>
+        <div class="field"><label for="cn">Name</label><input id="cn" placeholder="आपका नाम"></div>
+        <div class="frow">
+          <div class="field"><label for="cp">Phone</label><input id="cp" placeholder="10-digit mobile" inputmode="numeric"></div>
+          <div class="field"><label for="cs">Service</label>
+            <select id="cs">
+              <option>Rooftop Solar</option>
+              <option>Solar Power Plant</option>
+              <option>Solar Water Pump (Borewell)</option>
+              <option>Agriculture Land</option>
+              <option>Commercial Land</option>
+              <option>Residential Land</option>
+            </select>
           </div>
-          <div class="frow">
-            <div class="field">
-              <label>MOBILE NUMBER</label>
-              <input type="tel" placeholder="10-digit number" required />
-            </div>
-            <div class="field">
-              <label>SERVICE SEGMENT</label>
-              <select required>
-                <option value="">Choose service</option>
-                <option value="rooftop">On-Grid Rooftop Solar</option>
-                <option value="pump">Solar Borewell Pump</option>
-                <option value="agri">Agricultural Land Purchase</option>
-                <option value="plot">Commercial/Residential Plots</option>
-              </select>
-            </div>
-          </div>
-          <div class="field">
-            <label>MESSAGE / PROPERTY SPECIFICATIONS</label>
-            <textarea rows="4" placeholder="Describe your power bill load capacity requirements or preferred land location..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-sun" style="width:100%; margin-top:10px">Submit Consultation Request</button>
-        </form>
+        </div>
+        <div class="field"><label for="cm">Message</label><textarea id="cm" rows="3" placeholder="जैसे: 3KW solar के लिए site visit चाहिए"></textarea></div>
+        <button class="btn btn-wa" style="width:100%;justify-content:center" id="sendwa"><svg width="18" height="18"><use href="#wa"/></svg> Send on WhatsApp →</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER SECTION ============ -->
+<!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div class="fbrand">
         <b>Megha Associates</b>
-        <p>Your premier engineering and real estate consulting alliance in Durg Division, providing sustainable lifestyle options from the ground up.</p>
+        <p class="dev">ज़मीन से आसमान तक — Durg की भरोसेमंद solar और real estate company. Clean energy, bright future.</p>
         <div class="fsoc">
-          <a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1.5C18.7 1.4 17.5 1 16 1c-3 0-5 1.8-5 5.2V9H7v4h4v9h2z"/></svg></a>
-          <a href="https://wa.me/917828826316" target="_blank" aria-label="WhatsApp"><svg width="16" height="16"><use href="#wa"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1.5C18.7 1.4 17.5 1 16 1c-3 0-5 1.8-5 5.2V9H7v4h4v9h2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/917828826316" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15"><use href="#wa"/></svg></a>
         </div>
       </div>
       <div>
-        <h4>Solar Energy</h4>
-        <a href="#services" class="fl">Residential Rooftop</a>
-        <a href="#services" class="fl">Commercial Plants</a>
-        <a href="#services" class="fl">Solar Water Pumps</a>
-        <a href="#estimate" class="fl">Savings Estimator</a>
+        <h4>Solar</h4>
+        <a class="fl" href="#services">Rooftop Solar</a>
+        <a class="fl" href="#services">Solar Power Plant</a>
+        <a class="fl" href="#services">Solar Water Pump</a>
+        <a class="fl" href="#estimate">Solar Calculator</a>
       </div>
       <div>
         <h4>Real Estate</h4>
-        <a href="#services" class="fl">Agricultural Farmland</a>
-        <a href="#services" class="fl">Commercial Infrastructure</a>
-        <a href="#services" class="fl">Residential Colonies</a>
-        <a href="#why" class="fl">Legal Verification Flow</a>
+        <a class="fl" href="#services">Agriculture Land</a>
+        <a class="fl" href="#services">Commercial Land</a>
+        <a class="fl" href="#services">Residential Land</a>
+        <a class="fl" href="#blog">Tips &amp; Guides</a>
       </div>
       <div>
-        <h4>Helpline Support</h4>
-        <p style="font-size:0.9rem; color:#9fb3c8; margin-bottom:10px">Operational Hours:<br>Monday - Saturday: 9:30 AM to 7:00 PM</p>
-        <p style="font-size:0.9.5rem; color:#fff; font-weight:700">Call: +91 78288 26316</p>
+        <h4>Contact</h4>
+        <a class="fl" href="tel:7828826316">+91 78288 26316</a>
+        <a class="fl" href="mailto:meghasolarenergy2505@gmail.com">meghasolarenergy2505@gmail.com</a>
+        <a class="fl" href="#contact">Kadam Plaza, Shop 12, Borsi, Durg</a>
+        <a class="fl" href="#contact">Mon–Sun, 10 AM – 7 PM</a>
       </div>
     </div>
-    
     <div class="areas">
-      <h4>Operational Hubs</h4>
-      <span>Durg &bull; Bhilai &bull; Raipur &bull; Dhamdha &bull; Patan &bull; Rajnandgaon &bull; Kumhari &bull; Charoda</span>
+      <h4>Areas we serve</h4>
+      <span>Durg · Bhilai · Borsi · Patan · Rajnandgaon · Raipur · Dhamtari · Bemetara</span>
     </div>
-    
     <div class="fbot">
-      <span>&copy; 2026 Megha Associates. All Rights Reserved.</span>
-      <span class="ownerlink" id="ownerLink">Internal Access Portal</span>
+      <span>© <span id="yr"></span> Megha Associates. All rights reserved.</span>
+      <span class="ownerlink" id="ownerlink">Owner Login · Quotation Generator</span>
     </div>
   </div>
 </footer>
 
-<!-- ============ FLOATING ACTION WIDGETS ============ -->
+<!-- ============ FLOATING WHATSAPP WIDGET ============ -->
 <div class="fab">
   <a class="wa-widget" href="https://wa.me/917828826316" target="_blank" rel="noopener">
-    <span>WhatsApp Contact</span>
-    <div class="ico"><svg width="24" height="24"><use href="#wa"/></svg></div>
+    <span>Chat on WhatsApp</span>
+    <span class="ico"><svg width="26" height="26" style="color:#fff"><use href="#wa"/></svg></span>
   </a>
-  <a class="call" href="tel:7828826316" aria-label="Call Operational Desk">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  <a class="call" href="tel:7828826316" aria-label="Call">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2c1 2 3 4 5 5l2-3 5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
   </a>
 </div>
 
-<!-- ============ INTERNAL QUOTATION DEVELOPER GENERATOR MODAL ============ -->
-<div class="overlay" id="modalOverlay">
-  <div class="modal">
-    <div class="modal-head">
-      <h3>Internal Quotation Management Engine</h3>
-      <button class="x" id="closeModal">&times;</button>
-    </div>
+<!-- ============ OWNER MODAL ============ -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Owner quotation generator">
+    <div class="modal-head"><h3 id="modaltitle">🔒 Owner Login</h3><button class="x" id="closeModal" aria-label="Close">✕</button></div>
     <div class="modal-body">
-      <!-- Passcode gate screen -->
-      <div class="gate" id="authGate">
-        <div class="lock"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
-        <h4>Staff Gate Verification</h4>
-        <p>Input private access key to access template construction logs.</p>
-        <input type="password" id="gatePin" placeholder="••••" maxlength="4"/>
-        <div class="err" id="gateErr"></div>
+      <div class="gate" id="gate">
+        <div class="lock"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#E08A00" stroke-width="2"/><path d="M8 11V8a4 4 0 018 0v3" stroke="#E08A00" stroke-width="2"/></svg></div>
+        <h4>Quotation Generator</h4><p class="dev">यह सिर्फ़ owner के लिए है. Password डालिए.</p>
+        <input type="password" id="pw" placeholder="Password" autocomplete="off">
+        <div class="err" id="pwerr"></div>
+        <button class="btn btn-ink" style="width:100%;justify-content:center;margin-top:6px" id="loginbtn">Unlock →</button>
       </div>
-      
-      <!-- Inside management application -->
-      <div class="builder hidden" id="appBody">
-        <div class="tabs">
-          <button class="on" id="tabSet">Configuration Matrix</button>
-          <button id="tabPrint">Generated Document Sheet</button>
+      <div class="builder hidden" id="builder">
+        <div class="tabs"><button class="on" id="tab-solar">☀️ Solar Quotation</button><button id="tab-land">🌱 Land Quotation</button></div>
+        <div class="frow"><div><label>Quotation / Ref No.</label><input id="q-ref" value="MA/25-26/001"></div><div><label>Date</label><input type="date" id="q-date"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>Customer name</label><input id="q-cname" placeholder="Mr. Umesh Singh"></div><div><label>Customer address</label><input id="q-caddr" placeholder="Meenakshi Nagar, Durg (C.G.)"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>Customer phone</label><input id="q-cphone" placeholder="98xxxxxxxx"></div><div id="kwfield"><label>System size (title)</label><input id="q-size" value="5 KW"></div></div>
+        <div class="items-head"><h4 id="itemsLabel">System / Items</h4><button class="addrow" id="addItem">+ Add row</button></div>
+        <div id="rows"></div>
+        <div class="totbar"><div><label id="baseLabel">Base amount (₹, before GST)</label><input type="number" id="q-base" value="276190" inputmode="numeric"></div><div><label>GST %</label><input type="number" id="q-gst" value="5" inputmode="numeric"></div></div>
+        <div class="totbar" style="margin-top:10px;background:var(--ink);color:#fff;border:0"><div style="display:flex;justify-content:space-between"><span>GST amount</span><b id="t-gst" style="font-family:Sora">₹13,810</b></div><div style="display:flex;justify-content:space-between"><span>Total</span><b id="t-total" style="font-family:Sora;color:var(--sun)">₹2,90,000</b></div></div>
+        <div id="solarExtra">
+          <div class="items-head"><h4>Subsidy &amp; Terms</h4></div>
+          <div class="frow"><div><label>Govt. subsidy note (₹)</label><input id="q-subsidy" value="1,08,000"></div><div><label>Offer validity</label><input id="q-valid" value="7 days"></div></div>
+          <div class="frow" style="margin-top:10px"><div><label>Payment terms</label><input id="q-pay" value="100% Advance"></div><div><label>Delivery &amp; Installation</label><input id="q-deliv" value="20 Days"></div></div>
         </div>
-        
-        <div id="configForm">
-          <div class="frow" style="grid-template-columns:2fr 1fr 1fr; margin-bottom:12px;">
-            <div>
-              <label>CLIENT CORPORATION NAME</label>
-              <input type="text" id="qClient" value="Anoop Deshmukh, Residential Setup">
-            </div>
-            <div>
-              <label>INVOICE QUOTE ID</label>
-              <input type="text" id="qId" value="MA/SOL/2026/894">
-            </div>
-            <div>
-              <label>SETUP DATE</label>
-              <input type="date" id="qDate" value="2026-06-20">
-            </div>
-          </div>
-          
-          <div class="items-head">
-            <h4>Bill of Materials Breakdown</h4>
-            <button type="button" class="addrow" id="addRowBtn">+ Add Matrix Row</button>
-          </div>
-          
-          <div id="rowContainer">
-            <!-- Row 1 Default -->
-            <div class="frow3 row-item">
-              <div>
-                <label>Component Description</label>
-                <input type="text" class="item-desc" value="Waaree 540Wp MonoPERC Tier-1 Solar Modules (6 Panels)">
-              </div>
-              <div>
-                <label>Unit Calculation</label>
-                <input type="text" class="item-spec" value="3.24 kWp Total Capacity">
-              </div>
-              <div>
-                <label>Line Cost (₹)</label>
-                <input type="number" class="item-val" value="135000">
-              </div>
-              <button type="button" class="delrow">&times;</button>
-            </div>
-            <!-- Row 2 Default -->
-            <div class="frow3 row-item">
-              <div>
-                <input type="text" class="item-desc" value="Growatt 3kW Smart On-Grid String Inverter with Wi-Fi Logger">
-              </div>
-              <div>
-                <input type="text" class="item-spec" value="IP65 Dual MPPT Track">
-              </div>
-              <div>
-                <input type="number" class="item-val" value="42000">
-              </div>
-              <button type="button" class="delrow">&times;</button>
-            </div>
-          </div>
-          
-          <div class="totbar">
-            <div>
-              <label>NET GOVERNMENT SUBSIDY DEDUCTION VALUE (₹)</label>
-              <input type="number" id="qSubsidyInput" value="78000" style="font-size:1.1rem; padding:6px">
-            </div>
-            <div style="text-align:right">
-              <span style="font-size:0.8rem; font-weight:600; color:var(--muted)">CALCULATED MATRIX COST TOTAL</span>
-              <h2 id="liveGross" style="color:var(--ink); margin-top:5px">₹177,000</h2>
-            </div>
-          </div>
-          
-          <div class="btnbar">
-            <button type="button" class="btn btn-line" id="clearBtn">Flush Variables</button>
-            <button type="button" class="btn btn-green" id="generateDocBtn">Build Output Print Document</button>
-          </div>
-        </div>
-        
-        <!-- Live Print Ready Output Section -->
-        <div id="previewArea" class="sheet-wrap">
-          <div id="sheet">
-            <div class="q-top">
-              <div>
-                <div class="q-co">Megha Associates<small>Solar &amp; Real Estate Alliance</small></div>
-                <div class="q-addr">GE Road Office Corridor, Opposite Circuit House, Durg (C.G.)<br>Contact: +91 78288 26316 | Email: meghasolarenergy2505@gmail.com</div>
-              </div>
-              <svg class="q-logo" viewBox="0 0 128 128" width="60" height="60">
-                <circle cx="64" cy="40" r="19" fill="#F6B400"/>
-                <path d="M20 82 L64 47 L108 82 Z" fill="#0A2540"/>
-                <path d="M37 80 L64 58 L91 80 L64 80 Z" fill="#1C7C43"/>
-              </svg>
-            </div>
-            
-            <div class="q-title">COMMERCIAL PROPOSAL FOR SYSTEM INSTALLATION</div>
-            
-            <div class="q-meta">
-              <div>
-                <div><strong>Client Identity:</strong> <span id="pClient">Anoop Deshmukh</span></div>
-                <div><strong>Project Zone:</strong> Raipur-Durg Region Hub</div>
-              </div>
-              <div style="text-align:right">
-                <div><strong>Quotation ID:</strong> <span id="pId">MA/SOL/2026/894</span></div>
-                <div><strong>Generation Date:</strong> <span id="pDate">2026-06-20</span></div>
-              </div>
-            </div>
-            
-            <table>
-              <thead>
-                <tr>
-                  <th style="width:50%">Equipment & Service Specifications Matrix</th>
-                  <th style="width:30%">Operational Metrics</th>
-                  <th style="text-align:right; width:20%">Valuation Amount</th>
-                </tr>
-              </thead>
-              <tbody id="printTableBody">
-                <!-- Injected via app dynamic scripts -->
-              </tbody>
-            </table>
-            
-            <div class="q-amt">
-              <table>
-                <tr>
-                  <td>Gross Setup Valuations:</td>
-                  <td style="text-align:right" id="pGross">₹177,000.00</td>
-                </tr>
-                <tr>
-                  <td style="color:var(--land); font-weight:600">PM Surya Ghar Subsidy Deduction:</td>
-                  <td style="text-align:right; color:var(--land); font-weight:600" id="pSubsidy">-₹78,000.00</td>
-                </tr>
-                <tr class="grand">
-                  <td>Net Estimated Outlay:</td>
-                  <td style="text-align:right" id="pNet">₹99,000.00</td>
-                </tr>
-              </table>
-            </div>
-            
-            <div class="q-words"><strong>Net Outlay in words:</strong> <span id="pWords">Rupees Ninety-Nine Thousand Only</span></div>
-            
-            <div class="q-grid2">
-              <div class="q-bank">
-                <h5>Corporate Banking Settlement Channels</h5>
-                <div>Bank Account: Megha Associates Commercial</div>
-                <div>A/C Num: 926020058410294 &bull; IFS Code: UTIB0000421</div>
-                <div>Clearing Node: Axis Bank Branch Corridor, Durg</div>
-              </div>
-              <div class="q-sub">
-                <h5>Subsidy Processing Clause</h5>
-                The structural subsidy calculation matrix tracks current MNRE adjustments. Direct balance tracking updates straight to your Aadhaar linked verification vault post net-meter operational signoff.
-              </div>
-            </div>
-            
-            <div class="q-foot">
-              <div class="q-thanks">Thank you for opting for clean energy solutions with us.</div>
-              <div class="q-sign">
-                <br><br>
-                <b>Authorized Executive Signoff</b>
-                <div>Megha Associates Operations Desk</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="btnbar" style="margin-top:20px; border-top:1px solid var(--line); padding-top:15px">
-            <button type="button" class="btn btn-ink" onclick="window.print()">Trigger Safe OS System Print Pipeline</button>
-          </div>
-        </div>
-        
+        <div class="items-head"><h4>Your bank details (editable)</h4></div>
+        <div class="frow"><div><label>Account name</label><input id="q-bname" value="Megha Associates"></div><div><label>Bank &amp; Branch</label><input id="q-bbank" placeholder="UCO Bank, ___ Branch"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>Account No.</label><input id="q-bacc" placeholder="XXXXXXXXXXXX"></div><div><label>IFSC</label><input id="q-bifsc" placeholder="UCBA00XXXXX"></div></div>
+        <div class="frow" style="margin-top:10px"><div><label>GSTIN</label><input id="q-gstin" placeholder="22XXXXXXXXXXXZX"></div><div><label>Company contact</label><input id="q-cocontact" value="7828826316"></div></div>
+        <div class="btnbar"><button class="btn btn-line" id="previewBtn">👁 Preview</button><button class="btn btn-sun" id="printBtn">🖨 Print / Save PDF</button></div>
       </div>
     </div>
   </div>
 </div>
+<div class="sheet-wrap" id="sheetWrap"><div id="sheet"></div></div>
 
-<!-- ============ CLIENT INTERACTIVE JAVASCRIPT LOGIC ENGINE ============ -->
 <script>
-  // 1. Mobile Hamburger Bar Navigation Controller Engine
-  const menubtn = document.getElementById('menubtn');
-  const navlinks = document.getElementById('navlinks');
-  if(menubtn && navlinks) {
-    menubtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      navlinks.classList.toggle('open');
-    });
-    // Auto collapse layout overlay on anchor trigger
-    navlinks.querySelectorAll('a').forEach(lnk => {
-      lnk.addEventListener('click', () => navlinks.classList.remove('open'));
-    });
-    document.addEventListener('click', () => navlinks.classList.remove('open'));
-  }
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('q-date').value=new Date().toISOString().slice(0,10);
 
-  // 2. Real-Time Solar Power Savings Estimator Engine
-  const billInput = document.getElementById('billInput');
-  const outSize = document.getElementById('outSize');
-  const outSpace = document.getElementById('outSpace');
-  const outSubsidy = document.getElementById('outSubsidy');
-  const outPayback = document.getElementById('outPayback');
+/* mobile menu */
+const nav=document.getElementById('navlinks');
+document.getElementById('menubtn').addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
-  function computeSolarMetrics() {
-    const bill = parseFloat(billInput.value) || 0;
-    let size, space, subsidy, payback;
+/* estimator */
+const RATE=8,GEN=4;
+function fmt(n){return '₹'+Math.round(n).toLocaleString('en-IN')}
+function estimate(){
+  const bill=Math.max(0,+document.getElementById('bill').value||0);
+  const kw=Math.max(1,Math.round((bill/RATE/(GEN*30))*2)/2);
+  document.getElementById('o-size').textContent=kw+' KW';
+  const save=bill*0.9;
+  document.getElementById('o-save').textContent=fmt(save);
+  document.getElementById('o-year').textContent=fmt(save*12);
+}
+document.getElementById('bill').addEventListener('input',estimate);estimate();
 
-    if(bill <= 1500) {
-      size = 1; space = 100; subsidy = 30000; payback = 4.2;
-    } else if(bill <= 3000) {
-      size = 2; space = 200; subsidy = 60000; payback = 3.8;
-    } else if(bill <= 6000) {
-      size = 3; space = 300; subsidy = 78000; payback = 3.4;
-    } else if(bill <= 12000) {
-      size = 5; space = 500; subsidy = 78000; payback = 3.1;
-    } else {
-      size = Math.min(Math.ceil(bill / 2200), 25);
-      space = size * 95;
-      subsidy = 78000;
-      payback = 2.9;
-    }
+/* stat counters */
+function animateStat(el){
+  const t=+el.dataset.target,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'';
+  let s=null;const dur=1400;
+  function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/dur,1);const v=Math.floor(p*t);
+    el.textContent=pre+v.toLocaleString('en-IN')+suf;if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+}
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){animateStat(e.target);io.unobserve(e.target);}})},{threshold:.5});
+document.querySelectorAll('.stat b').forEach(el=>io.observe(el));
 
-    outSize.innerText = size + " kWp";
-    outSpace.innerText = space + " sq.ft";
-    outSubsidy.innerText = "₹" + subsidy.toLocaleString('en-IN');
-    outPayback.innerText = payback + " Years";
-  }
-  if(billInput) {
-    billInput.addEventListener('input', computeSolarMetrics);
-    computeSolarMetrics(); // Initialize engine on site baseline bootup
-  }
+/* contact -> whatsapp */
+document.getElementById('sendwa').addEventListener('click',()=>{
+  const n=document.getElementById('cn').value||'—',p=document.getElementById('cp').value||'—',s=document.getElementById('cs').value,m=document.getElementById('cm').value||'—';
+  window.open(`https://wa.me/917828826316?text=Namaste Megha Associates! 👋%0A%0AName: ${n}%0APhone: ${p}%0AService: ${s}%0AMessage: ${m}`,'_blank');
+});
+document.querySelectorAll('[data-land]').forEach(el=>el.addEventListener('click',()=>{document.getElementById('cs').value=el.dataset.land;}));
 
-  // 3. Internal Admin Access Gate Control Modal Workflow
-  const ownerLink = document.getElementById('ownerLink');
-  const modalOverlay = document.getElementById('modalOverlay');
-  const closeModal = document.getElementById('closeModal');
-  const gatePin = document.getElementById('gatePin');
-  const gateErr = document.getElementById('gateErr');
-  const authGate = document.getElementById('authGate');
-  const appBody = document.getElementById('appBody');
-
-  if(ownerLink && modalOverlay && closeModal) {
-    ownerLink.addEventListener('click', () => {
-      modalOverlay.classList.add('show');
-      gatePin.value = '';
-      gateErr.innerText = '';
-      authGate.style.display = 'block';
-      appBody.classList.add('hidden');
-      gatePin.focus();
-    });
-    closeModal.addEventListener('click', () => modalOverlay.classList.remove('show'));
-  }
-
-  // Check 4-digit PIN gateway
-  if(gatePin) {
-    gatePin.addEventListener('input', () => {
-      if(gatePin.value === '2505') { // Hardcoded default private key
-        authGate.style.display = 'none';
-        appBody.classList.remove('hidden');
-      } else if(gatePin.value.length === 4) {
-        gateErr.innerText = 'Invalid access code variables. Try again.';
-        gatePin.value = '';
-      }
-    });
-  }
-
-  // Tabs toggle system inside internal tool matrix
-  const tabSet = document.getElementById('tabSet');
-  const tabPrint = document.getElementById('tabPrint');
-  const configForm = document.getElementById('configForm');
-  const previewArea = document.getElementById('previewArea');
-
-  if(tabSet && tabPrint && configForm && previewArea) {
-    tabSet.addEventListener('click', () => {
-      tabSet.classList.add('on'); tabPrint.classList.remove('on');
-      configForm.style.display = 'block'; previewArea.style.display = 'none';
-    });
-    tabPrint.addEventListener('click', () => {
-      tabPrint.classList.add('on'); tabSet.classList.remove('on');
-      configForm.style.display = 'none'; previewArea.style.display = 'block';
-      buildProposalDocumentSheet();
-    });
-  }
-
-  // Dynamic Item Row Management Engine inside Proposal tool
-  const addRowBtn = document.getElementById('addRowBtn');
-  const rowContainer = document.getElementById('rowContainer');
-  const liveGross = document.getElementById('liveGross');
-
-  function calculateLiveGrossSum() {
-    let sum = 0;
-    document.querySelectorAll('.item-val').forEach(input => {
-      sum += parseFloat(input.value) || 0;
-    });
-    if(liveGross) liveGross.innerText = "₹" + sum.toLocaleString('en-IN');
-    return sum;
-  }
-
-  if(rowContainer) {
-    rowContainer.addEventListener('input', calculateLiveGrossSum);
-    rowContainer.addEventListener('click', (e) => {
-      if(e.target.classList.contains('delrow')) {
-        const remaining = rowContainer.querySelectorAll('.row-item').length;
-        if(remaining > 1) {
-          e.target.closest('.row-item').remove();
-          calculateLiveGrossSum();
-        } else {
-          alert("Matrix generation rules require at least one line allocation variable.");
-        }
-      }
-    });
-  }
-
-  if(addRowBtn && rowContainer) {
-    addRowBtn.addEventListener('click', () => {
-      const div = document.createElement('div');
-      div.className = 'frow3 row-item';
-      div.innerHTML = `
-        <div><input type="text" class="item-desc" placeholder="Component description name"></div>
-        <div><input type="text" class="item-spec" placeholder="Operational metric size"></div>
-        <div><input type="number" class="item-val" value="0"></div>
-        <button type="button" class="delrow">&times;</button>
-      `;
-      rowContainer.appendChild(div);
-      div.querySelector('.item-desc').focus();
-    });
-  }
-
-  // Convert pure number sets to elegant English words
-  function translateNumberToEnglishWords(num) {
-    if (num === 0) return 'Rupees Zero Only';
-    const units = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
-    const tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
-    const scales = ['', 'Thousand', 'Lakh', 'Crore'];
-    
-    function convertLessThanOneThousand(n) {
-      let str = '';
-      if (n >= 100) {
-        str += units[Math.floor(n / 100)] + ' Hundred ';
-        n %= 100;
-      }
-      if (n >= 20) {
-        str += tens[Math.floor(n / 10)] + ' ';
-        n %= 10;
-      }
-      if (n > 0) {
-        str += units[n] + ' ';
-      }
-      return str.trim();
-    }
-
-    let wordStr = '';
-    let scaleIdx = 0;
-    
-    // Simple custom localized Indian numbering conversion system logic block
-    let chunks = [];
-    chunks.push(num % 1000); // Thousands base split
-    num = Math.floor(num / 1000);
-    
-    while (num > 0) {
-      chunks.push(num % 100); // Indian system divides into couples afterward
-      num = Math.floor(num / 100);
-    }
-    
-    for (let i = chunks.length - 1; i >= 0; i--) {
-      let c = chunks[i];
-      if (c > 0) {
-        let valStr = convertLessThanOneThousand(c);
-        let currScale = i === 1 ? 'Thousand' : i === 2 ? 'Lakh' : i === 3 ? 'Crore' : '';
-        wordStr += valStr + ' ' + currScale + ' ';
-      }
-    }
-    return "Rupees " + wordStr.replace(/\s+/g, ' ').trim() + " Only";
-  }
-
-  // Proposal HTML Print Template Mapping Engine
-  function buildProposalDocumentSheet() {
-    // Collect variables from UI
-    document.getElementById('pClient').innerText = document.getElementById('qClient').value;
-    document.getElementById('pId').innerText = document.getElementById('qId').value;
-    document.getElementById('pDate').innerText = document.getElementById('qDate').value;
-
-    const tableBody = document.getElementById('printTableBody');
-    tableBody.innerHTML = '';
-
-    let grossVal = 0;
-    document.querySelectorAll('.row-item').forEach(row => {
-      const desc = row.querySelector('.item-desc').value;
-      const spec = row.querySelector('.item-spec').value;
-      const val = parseFloat(row.querySelector('.item-val').value) || 0;
-      grossVal += val;
-
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td><strong>${desc}</strong></td>
-        <td>${spec}</td>
-        <td style="text-align:right; font-weight:500">₹${val.toLocaleString('en-IN')}.00</td>
-      `;
-      tableBody.appendChild(tr);
-    });
-
-    const subsidyVal = parseFloat(document.getElementById('qSubsidyInput').value) || 0;
-    const netVal = Math.max((grossVal - subsidyVal), 0);
-
-    document.getElementById('pGross').innerText = "₹" + grossVal.toLocaleString('en-IN') + ".00";
-    document.getElementById('pSubsidy').innerText = "-₹" + subsidyVal.toLocaleString('en-IN') + ".00";
-    document.getElementById('pNet').innerText = "₹" + netVal.toLocaleString('en-IN') + ".00";
-    document.getElementById('pWords').innerText = translateNumberToEnglishWords(netVal);
-  }
-
-  const generateDocBtn = document.getElementById('generateDocBtn');
-  if(generateDocBtn && tabPrint) {
-    generateDocBtn.addEventListener('click', () => {
-      tabPrint.click();
-    });
-  }
+/* ===== OWNER QUOTATION GENERATOR ===== */
+const OWNER_PASSWORD="megha@2025"; /* ⚠️ owner: yahan apna password badlein */
+const overlay=document.getElementById('overlay'),gate=document.getElementById('gate'),builder=document.getElementById('builder');
+function openModal(){overlay.classList.add('show');document.body.style.overflow='hidden';}
+function closeModal(){overlay.classList.remove('show');document.body.style.overflow='';}
+document.getElementById('ownerlink').addEventListener('click',openModal);
+document.getElementById('closeModal').addEventListener('click',closeModal);
+overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal();});
+document.getElementById('loginbtn').addEventListener('click',tryLogin);
+document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')tryLogin();});
+function tryLogin(){
+  if(document.getElementById('pw').value===OWNER_PASSWORD){
+    gate.classList.add('hidden');builder.classList.remove('hidden');
+    document.getElementById('modaltitle').textContent='🧾 Quotation Generator';renderRows();
+  }else{document.getElementById('pwerr').textContent='गलत password. दोबारा कोशिश कीजिए.';}
+}
+const SOLAR_ROWS=[
+  ['05 KW Solar Module','SATVIK / WAAREE / ADANI','1 Set'],
+  ['Solar Inverter - 03KW 01ph','POLYCAB / DEYE','1 Set'],
+  ['Control Panel ACDB–DCDB','HAVELLS','1 Set'],
+  ['Cables, Wire & Accessories','HAVELLS','1 Set'],
+  ['Lightening Arrestor','WAAREE','1 Set'],
+  ['Earthing Kit (Chemical Earthing)','WAAREE','1 Set'],
+  ['Structure','Hot Dip Galvanized 2.5MM','1 Set'],
+  ['Installation, Electrical & Civil work','Done by Company','1 Job'],
+  ['Meter testing & synchronization','Done by Company','1 Job'],
+];
+const LAND_ROWS=[['Residential Plot','Clear title / approved layout','1200 sq.ft']];
+let mode='solar';const rowsEl=document.getElementById('rows');
+function rowHTML(it,mk,q){return `<div class="frow3"><div><label>Item / Description</label><input class="r-item" value="${it||''}"></div><div><label>Make / Details</label><input class="r-make" value="${mk||''}"></div><div><label>Qty</label><input class="r-qty" value="${q||''}"></div><button class="delrow" title="Remove">✕</button></div>`;}
+function renderRows(){rowsEl.innerHTML=(mode==='solar'?SOLAR_ROWS:LAND_ROWS).map(r=>rowHTML(r[0],r[1],r[2])).join('');bindDel();}
+function bindDel(){rowsEl.querySelectorAll('.delrow').forEach(b=>b.onclick=()=>b.closest('.frow3').remove());}
+document.getElementById('addItem').addEventListener('click',()=>{rowsEl.insertAdjacentHTML('beforeend',rowHTML('','',''));bindDel();});
+function setMode(m){
+  mode=m;
+  document.getElementById('tab-solar').classList.toggle('on',m==='solar');
+  document.getElementById('tab-land').classList.toggle('on',m==='land');
+  document.getElementById('solarExtra').style.display=m==='solar'?'block':'none';
+  document.getElementById('kwfield').style.display=m==='solar'?'block':'none';
+  document.getElementById('itemsLabel').textContent=m==='solar'?'System / Items':'Property / Items';
+  document.getElementById('baseLabel').textContent=m==='solar'?'Base amount (₹, before GST)':'Land price (₹, before GST)';
+  document.getElementById('q-gst').value=m==='land'?'0':'5';
+  renderRows();calcTotals();
+}
+document.getElementById('tab-solar').addEventListener('click',()=>setMode('solar'));
+document.getElementById('tab-land').addEventListener('click',()=>setMode('land'));
+function calcTotals(){
+  const base=+document.getElementById('q-base').value||0,gstpct=+document.getElementById('q-gst').value||0;
+  const gst=base*gstpct/100,total=base+gst;
+  document.getElementById('t-gst').textContent=fmt(gst);
+  document.getElementById('t-total').textContent=fmt(total);
+  return{base,gst,total,gstpct};
+}
+['q-base','q-gst'].forEach(id=>document.getElementById(id).addEventListener('input',calcTotals));
+function numToWords(num){
+  num=Math.round(num);if(num===0)return 'Zero';
+  const a=['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'];
+  const b=['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety'];
+  function two(n){return n<20?a[n]:b[Math.floor(n/10)]+(n%10?' '+a[n%10]:'');}
+  function three(n){return n>99?a[Math.floor(n/100)]+' Hundred'+(n%100?' '+two(n%100):''):two(n);}
+  let s='';const cr=Math.floor(num/10000000);num%=10000000;const l=Math.floor(num/100000);num%=100000;const t=Math.floor(num/1000);num%=1000;
+  if(cr)s+=three(cr)+' Crore ';if(l)s+=two(l)+' Lakh ';if(t)s+=two(t)+' Thousand ';if(num)s+=three(num);return s.trim();
+}
+function gatherRows(){return[...rowsEl.querySelectorAll('.frow3')].map((r,i)=>({no:i+1,item:r.querySelector('.r-item').value,make:r.querySelector('.r-make').value,qty:r.querySelector('.r-qty').value}));}
+function val(id){return document.getElementById(id).value;}
+function buildSheet(){
+  const {base,gst,total,gstpct}=calcTotals();const rows=gatherRows();const isSolar=mode==='solar';
+  const title=isSolar?`QUOTATION — ${val('q-size')}`:'LAND QUOTATION';
+  const rowsHTML=rows.map(r=>`<tr><td style="text-align:center">${r.no}</td><td>${r.item}</td><td>${r.make}</td><td style="text-align:center">${r.qty}</td></tr>`).join('');
+  const subsidy=isSolar?`<div class="q-sub">As per Govt. Regulations — Subsidy ₹${val('q-subsidy')} /-</div>`:'';
+  const terms=isSolar?`<div class="q-section"><h5>Terms &amp; Conditions</h5><div class="q-tc"><div><b>Payment:</b> ${val('q-pay')}</div><div><b>Delivery &amp; Installation:</b> ${val('q-deliv')}</div><div><b>Handling Charges:</b> Inclusive</div><div><b>Warranty:</b> Solar Panel 25 yrs · Inverter 7 yrs · ACDB/DCDB 2 yrs (as per company clause)</div><div><b>Offer Validity:</b> ${val('q-valid')}</div></div></div>`:`<div class="q-section"><h5>Terms &amp; Conditions</h5><div class="q-tc"><div><b>Payment:</b> As per agreement</div><div><b>Documentation:</b> Registry &amp; clear title transfer included</div><div><b>Offer Validity:</b> 15 days</div></div></div>`;
+  document.getElementById('sheet').innerHTML=`
+    <div class="q-top"><div><div class="q-co">MEGHA ASSOCIATES<small>SOLAR · REAL ESTATE</small></div><div class="q-addr">Kadam Plaza, Shop No. 12, Borsi, Durg (C.G.)<br>Phone: ${val('q-cocontact')} &nbsp;|&nbsp; Email: meghasolarenergy2505@gmail.com<br>${val('q-gstin')?'GSTIN: '+val('q-gstin'):''}</div></div>
+      <svg class="q-logo" viewBox="0 0 128 128"><circle cx="64" cy="40" r="19" fill="#F6B400"/><path d="M20 82 L64 47 L108 82 Z" fill="#0A2540"/><path d="M37 80 L64 58 L91 80 L64 80 Z" fill="#1C7C43"/></svg></div>
+    <div class="q-meta"><div><b>Ref No.:</b> ${val('q-ref')}</div><div><b>Date:</b> ${val('q-date')}</div></div>
+    <div style="font-size:12px"><b>To:</b> ${val('q-cname')||'—'}${val('q-cphone')?' ('+val('q-cphone')+')':''}<br>${val('q-caddr')||''}</div>
+    <div class="q-title">${title}</div>
+    <table><thead><tr><th style="width:34px;text-align:center">S.No</th><th>Item</th><th>Make / Details</th><th style="width:70px;text-align:center">Qty</th></tr></thead><tbody>${rowsHTML}</tbody></table>
+    <div class="q-amt"><table><tr><td>${isSolar? val('q-size')+' On-Grid Solar System (with installation)':'Land / Property value'}</td><td style="text-align:right">${fmt(base)}/-</td></tr><tr><td>GST (${gstpct}%)</td><td style="text-align:right">${fmt(gst)}/-</td></tr><tr class="grand"><td>Total Amount</td><td style="text-align:right">${fmt(total)}/-</td></tr></table></div>
+    <div class="q-words">In words: ${numToWords(total)} Rupees only</div>
+    ${subsidy}
+    <div class="q-grid2">${terms}<div class="q-section"><h5>Bank Details</h5><div class="q-bank"><div><b>Name:</b> ${val('q-bname')}</div><div><b>Bank:</b> ${val('q-bbank')||'—'}</div><div><b>A/C No.:</b> ${val('q-bacc')||'—'}</div><div><b>IFSC:</b> ${val('q-bifsc')||'—'}</div></div></div></div>
+    <div class="q-foot"><div class="q-thanks">Thank you for your business! 🌞</div><div class="q-sign"><b>For Megha Associates</b><br><br>______________________<br>Authorised Signatory</div></div>`;
+}
+document.getElementById('previewBtn').addEventListener('click',()=>{buildSheet();const w=document.getElementById('sheetWrap');w.style.display='block';w.style.position='relative';w.style.marginTop='24px';w.scrollIntoView({behavior:'smooth'});});
+document.getElementById('printBtn').addEventListener('click',()=>{buildSheet();window.print();});
 </script>
 </body>
 </html>
