@@ -679,44 +679,32 @@ footer a.fl:hover{color:var(--sun)}
 document.getElementById('yr').textContent = new Date().getFullYear();
 document.getElementById('q-date').value = new Date().toISOString().slice(0,10);
 
-// ===== SECURITY: Right-click & keyboard shortcuts =====
-document.addEventListener('contextmenu', e => {
-    // Only block on production if needed
-    // e.preventDefault();  // Comment this out for easier development
-});
+// ===== SECURITY =====
 
-document.addEventListener('keydown', e => {
-    if (e.key === 'F12' || 
-        (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) || 
-        (e.ctrlKey && e.key === 'u') || 
-        (e.ctrlKey && e.key === 's')) {
-        // e.preventDefault();  // Comment out for development
-        return false;
+// Right click - only block on mobile
+document.addEventListener("contextmenu", function(e){
+    if(window.innerWidth < 768){
+        e.preventDefault();
     }
 });
 
-// Improved DevTools detection - less aggressive
-(function devToolsCheck(){
-    let devtoolsOpen = false;
-    const threshold = 160;
-    
-    setInterval(() => {
-        const widthDiff = window.outerWidth - window.innerWidth > threshold;
-        const heightDiff = window.outerHeight - window.innerHeight > threshold;
-        
-        if (widthDiff || heightDiff) {
-            if (!devtoolsOpen) {
-                devtoolsOpen = true;
-                console.warn('DevTools detected');
-                // Don't destroy the page - just warn or do nothing in development
-                // document.body.innerHTML = '...' ; // ← COMMENT THIS OUT
-            }
-        } else {
-            devtoolsOpen = false;
-        }
-    }, 800);
-})();
+// Keyboard shortcuts
+document.addEventListener("keydown", function(e){
 
+    if(window.innerWidth < 768){
+
+        if(
+            e.key === "F12" ||
+            (e.ctrlKey && e.shiftKey &&
+                ["I","J","C"].includes(e.key.toUpperCase())) ||
+            (e.ctrlKey && e.key.toLowerCase()=="u")
+        ){
+            e.preventDefault();
+        }
+
+    }
+
+});
 // ===== MOBILE MENU =====
 const navEl = document.getElementById('navlinks');
 document.getElementById('menubtn').addEventListener('click', () => navEl.classList.toggle('open'));
